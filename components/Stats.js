@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const stats = [
@@ -13,20 +13,22 @@ const stats = [
 function Counter({ value, suffix }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-  const motionValue = useMotionValue(0);
-  const spring = useSpring(motionValue, { duration: 1.6, bounce: 0 });
 
   useEffect(() => {
-    if (inView) motionValue.set(value);
-  }, [inView, value, motionValue]);
+    if (!inView) return;
 
-  useEffect(() => {
-    return spring.on("change", (latest) => {
-      if (ref.current) {
-        ref.current.textContent = Math.floor(latest) + suffix;
-      }
+    const controls = animate(0, value, {
+      duration: 1.8 + value / 500,
+      ease: "easeOut",
+      onUpdate(latest) {
+        if (ref.current) {
+          ref.current.textContent = Math.floor(latest) + suffix;
+        }
+      },
     });
-  }, [spring, suffix]);
+
+    return () => controls.stop();
+  }, [inView, value, suffix]);
 
   return (
     <span

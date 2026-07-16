@@ -2,19 +2,10 @@
 
 import { motion } from "framer-motion";
 
-const mentors = [
-  { name: "Dr. Amara Osei", title: "Research Scientist, Applied ML", tags: ["NLP", "Health AI"] },
-  { name: "Ravi Chandrasekaran", title: "Staff Engineer, Infra", tags: ["Systems", "Scaling"] },
-  { name: "Lena Kowalski", title: "Founder, DevTools Startup", tags: ["Product", "Agents"] },
-  { name: "Marcus Webb", title: "Senior Data Scientist", tags: ["Computer Vision"] },
-  { name: "Priya Nair", title: "ML Engineer, Climate Tech", tags: ["Climate", "Forecasting"] },
-  { name: "Tomás Herrera", title: "Design Engineer", tags: ["Frontend", "UX"] },
-];
-
 export default function Mentors() {
   return (
     <section className="relative py-28 px-6">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,38 +19,29 @@ export default function Mentors() {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {mentors.map((mentor, i) => (
-            <motion.div
-              key={mentor.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              whileHover={{ y: -6 }}
-              className="rounded-2xl glass p-6 hover:shadow-flare transition-shadow"
-            >
-              <div className="h-14 w-14 rounded-full bg-gradient-to-br from-ember/40 to-flare/40 mb-4 flex items-center justify-center font-display font-semibold">
-                {mentor.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
-              </div>
-              <h4 className="font-display font-semibold">{mentor.name}</h4>
-              <p className="text-sm text-mist mt-1">{mentor.title}</p>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {mentor.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-[0.65rem] uppercase tracking-wider rounded-full border border-white/10 px-2.5 py-1 text-flare"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="rounded-3xl glass p-10 md:p-14 text-center"
+        >
+          <span className="text-5xl block mb-4">🧑‍🏫</span>
+          <h3 className="font-display text-h3 font-semibold">
+            None at the moment.
+          </h3>
+          <p className="text-mist mt-3 max-w-md mx-auto">
+            We're building our mentor bench for this event. If you're an
+            engineer, researcher, or founder who wants to help builders
+            level up over a weekend, we'd love to have you.
+          </p>
+          <a
+            href="mailto:hello@forgeai.dev?subject=Mentor%20Application"
+            className="inline-block mt-6 rounded-full bg-gradient-to-r from-ember to-gold px-7 py-3 font-semibold text-void shadow-ember hover:shadow-[0_0_50px_rgba(255,107,0,0.5)] transition-shadow"
+          >
+            Become a Mentor
+          </a>
+        </motion.div>
       </div>
     </section>
   );

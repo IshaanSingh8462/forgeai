@@ -12,16 +12,42 @@ function seeded(seed) {
   };
 }
 
+// Builds a closed loop of points around (x, y) so the orbit animation
+// can repeat seamlessly (last point circles back to the first).
+function buildOrbit(x, y, radius, steps = 8) {
+  const xs = [];
+  const ys = [];
+  for (let i = 0; i <= steps; i++) {
+    const angle = (i / steps) * Math.PI * 2;
+    xs.push(x + Math.cos(angle) * radius);
+    ys.push(y + Math.sin(angle) * radius);
+  }
+  return { xs, ys };
+}
+
 export default function NeuralField({ nodeCount = 26, className = "" }) {
   const { nodes, edges } = useMemo(() => {
     const rand = seeded(42);
-    const generatedNodes = Array.from({ length: nodeCount }).map((_, i) => ({
-      id: i,
-      x: rand() * 1000,
-      y: rand() * 600,
-      r: 1.5 + rand() * 2.5,
-      delay: rand() * 4,
-    }));
+    const generatedNodes = Array.from({ length: nodeCount }).map((_, i) => {
+      const x = rand() * 1000;
+      const y = rand() * 600;
+      const orbitRadius = 10 + rand() * 22;
+      const orbitDuration = 14 + rand() * 16;
+      const orbitDelay = rand() * -orbitDuration; // stagger starting phase
+      const orbit = buildOrbit(x, y, orbitRadius);
+
+      return {
+        id: i,
+        x,
+        y,
+        r: 1.5 + rand() * 2.5,
+        delay: rand() * 4,
+        orbitDuration,
+        orbitDelay,
+        xKeyframes: orbit.xs,
+        yKeyframes: orbit.ys,
+      };
+    });
 
     const generatedEdges = [];
     generatedNodes.forEach((node, i) => {
@@ -61,19 +87,49 @@ export default function NeuralField({ nodeCount = 26, className = "" }) {
       {edges.map((edge, i) => (
         <motion.line
           key={`edge-${i}`}
-          x1={edge.from.x}
-          y1={edge.from.y}
-          x2={edge.to.x}
-          y2={edge.to.y}
           stroke="url(#edgeGlow)"
           strokeWidth="0.6"
           strokeOpacity="0.35"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: 0.35 }}
+          initial={{
+            x1: edge.from.x,
+            y1: edge.from.y,
+            x2: edge.to.x,
+            y2: edge.to.y,
+            opacity: 0,
+          }}
+          animate={{
+            x1: edge.from.xKeyframes,
+            y1: edge.from.yKeyframes,
+            x2: edge.to.xKeyframes,
+            y2: edge.to.yKeyframes,
+            opacity: 0.35,
+          }}
           transition={{
-            duration: 2.4,
-            delay: edge.delay,
-            ease: "easeInOut",
+            x1: {
+              duration: edge.from.orbitDuration,
+              delay: edge.from.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            y1: {
+              duration: edge.from.orbitDuration,
+              delay: edge.from.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            x2: {
+              duration: edge.to.orbitDuration,
+              delay: edge.to.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            y2: {
+              duration: edge.to.orbitDuration,
+              delay: edge.to.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            opacity: { duration: 2.4, delay: edge.delay, ease: "easeInOut" },
           }}
         />
       ))}
@@ -81,18 +137,36 @@ export default function NeuralField({ nodeCount = 26, className = "" }) {
       {nodes.map((node) => (
         <motion.circle
           key={node.id}
-          cx={node.x}
-          cy={node.y}
           r={node.r}
           fill="url(#nodeGlow)"
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: [0, 1, 0.6, 1], scale: 1 }}
+          initial={{ cx: node.x, cy: node.y, opacity: 0, scale: 0 }}
+          animate={{
+            cx: node.xKeyframes,
+            cy: node.yKeyframes,
+            opacity: [0, 1, 0.6, 1],
+            scale: 1,
+          }}
           transition={{
-            duration: 3,
-            delay: node.delay * 0.5,
-            repeat: Infinity,
-            repeatType: "mirror",
-            repeatDelay: 2,
+            cx: {
+              duration: node.orbitDuration,
+              delay: node.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            cy: {
+              duration: node.orbitDuration,
+              delay: node.orbitDelay,
+              repeat: Infinity,
+              ease: "linear",
+            },
+            opacity: {
+              duration: 3,
+              delay: node.delay * 0.5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              repeatDelay: 2,
+            },
+            scale: { duration: 0.6, delay: node.delay * 0.3 },
           }}
         />
       ))}
