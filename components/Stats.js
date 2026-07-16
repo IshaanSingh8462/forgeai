@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 const stats = [
   { value: 500, suffix: "+", label: "Builders" },
   { value: 20, suffix: "+", label: "Mentors" },
-  { value: 48, suffix: "", label: "Hours" },
+  { value: 7, suffix: "", label: "days" },
   { value: 6, suffix: "", label: "Tracks" },
 ];
 
@@ -33,7 +33,7 @@ function Counter({ value, suffix }) {
   return (
     <span
       ref={ref}
-      className="font-display text-5xl md:text-6xl font-bold text-gradient tabular-nums"
+      className="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-gradient tabular-nums"
     >
       0
     </span>
@@ -53,7 +53,7 @@ export default function Stats() {
         >
           <span className="eyebrow">Scale</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            Bigger than a hackathon.
+            
           </h2>
         </motion.div>
 

@@ -77,7 +77,6 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="eyebrow inline-block mb-6"
         >
-          October 9–11 · A Global Student Hackathon
         </motion.span>
 
         <motion.h1
@@ -97,9 +96,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           className="mx-auto mt-6 max-w-2xl text-lg text-mist"
         >
-          The international 48-hour student hackathon where ambitious builders
-          create impactful AI solutions — alongside mentors, sponsors, and
-          6,000 lines of code you didn't have yesterday.
+          September 3 - 10, 2026
         </motion.p>
 
         <motion.div

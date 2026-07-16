@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 
 const social = [
-  { label: "X", href: "https://x.com" },
   { label: "Instagram", href: "https://instagram.com" },
   { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "GitHub", href: "https://github.com" },
+  { label: "Discord", href: "https://discord.com" },
 ];
 
 export default function Footer() {
@@ -22,10 +21,10 @@ export default function Footer() {
           className="relative mx-auto max-w-2xl"
         >
           <h2 className="font-display text-h2 font-bold">
-            Ready to <span className="text-gradient">forge</span> something?
+            Ready to <span className="text-gradient">forge</span>?
           </h2>
           <p className="text-mist mt-4">
-            Applications close in 86 days. Spots are first-come, first-served.
+            Join hundreds of other high school and college students building with AI.
           </p>
           <a
             href="mailto:hello@forgeai.dev"
@@ -43,7 +42,7 @@ export default function Footer() {
               Forge<span className="text-ember">AI</span>
             </span>
             <p className="text-sm text-mist mt-1">
-              hello@forgeai.dev · Made by students, for builders.
+              hello@forgeai.dev · Made by students, for students.
             </p>
           </div>
 

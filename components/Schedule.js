@@ -5,30 +5,43 @@ import { useRef } from "react";
 
 const days = [
   {
-    label: "Friday",
-    date: "Oct 9",
+    label: "Thursday 1",
+    date: "Sep 3",
     events: [
-      { time: "5:00 PM", title: "Doors open & check-in", desc: "Badge pickup, swag, and team formation mixer." },
-      { time: "7:00 PM", title: "Opening ceremony", desc: "Tracks announced, sponsor lightning talks, ground rules." },
-      { time: "9:00 PM", title: "Hacking begins", desc: "Find your table. The clock starts now." },
+      { time: "12:00 PM", title: "ForgeAI Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
+      { time: "1:00 PM", title: "Start Building", desc: "Go to the Discord to find teams, ask questions, or just hang out." },
+    ],
+  },
+  {
+    label: "Thurs - Sat",
+    date: "4 - 6",
+    events: [
+      { time: "TBD", title: "Mentor office hours", desc: "1:1 sessions with engineers from our sponsor teams." },
+      { time: "TBD", title: "Beginner Workshops", desc: "Beginner Coder? Join this to learn more about CS basics." },
+    ],
+  },
+  {
+    label: "Sun - Wed",
+    date: "7 - 9",
+    events: [
+      { time: "TBD", title: "More Mentors!", desc: "1:1 sessions with specialists from our sponsor teams." },
+      { time: "TBD", title: "More Workshops!", desc: "Fine-tuning on a budget, agent evals, and RAG in practice." },
+    ],
+  },
+  {
+    label: "Thursday 2",
+    date: "Sep 10",
+    events: [
+      { time: "12:00 PM", title: "Hacking ends", desc: "Submissions lock. Step away from the keyboard." },
+      { time: "1:00 PM", title: "Judging", desc: "Judges will now start to grade your projects." },
+      
     ],
   },
   {
     label: "Saturday",
-    date: "Oct 10",
+    date: "Sep 12",
     events: [
-      { time: "9:00 AM", title: "Mentor office hours", desc: "1:1 sessions with engineers from our sponsor teams." },
-      { time: "1:00 PM", title: "Workshops", desc: "Fine-tuning on a budget, agent evals, and RAG in practice." },
-      { time: "11:00 PM", title: "Midnight snack + demo dry-run", desc: "Optional feedback round with alumni judges." },
-    ],
-  },
-  {
-    label: "Sunday",
-    date: "Oct 11",
-    events: [
-      { time: "9:00 AM", title: "Hacking ends", desc: "Submissions lock. Step away from the keyboard." },
-      { time: "11:00 AM", title: "Judging", desc: "Live demos across all six tracks." },
-      { time: "3:00 PM", title: "Closing ceremony", desc: "Awards, prize checks, and the group photo." },
+      { time: "3:00 PM", title: "Winners Announced", desc: "Awards and prize checks given out." },
     ],
   },
 ];
