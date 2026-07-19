@@ -28,11 +28,11 @@ export default function Sponsors() {
         >
           <span className="text-5xl block mb-4">🤝</span>
           <h3 className="font-display text-h3 font-semibold">
-            None at the moment.
+            Partners & Sponsors: Join Early
           </h3>
           <p className="text-mist mt-3 max-w-md mx-auto">
-            We're opening up sponsorship for this event soon. Get in front
-            of 500+ ambitious builders before anyone else does.
+            We're opening up sponsorship for this event soon. Gain early
+          access to innovative AI projects, connect with top student talent, and showcase your brand to hundreds of ambitious builders.
           </p>
           <a
             href="mailto:hello@forgeai.dev?subject=Sponsorship%20Inquiry"

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import NeuralField from "./NeuralField";
 
 const paragraphs = [
-  "ForgeAI began as a dorm-room bet between three students and a GPU with too much time on its hands. Three years later, it's where builders from six continents spend a weekend turning half-formed ideas into working software.",
-  "We're not here for another to-do list app. We're here for the team that wires a language model into a stethoscope, or teaches a drone to read soil. The kind of project that makes a judge lean forward.",
-  "You'll get 48 hours, a mentor bench stacked with engineers and researchers, and a stage at the end to show what you built — no matter how many energy drinks it took to get there.",
+  "This is the first edition of ForgeAI, created for one reason: to give innovative students a space to invent, collaborate, and grow without limits.",
+  "We're going beyond basic coding and going towards Artificial Intelligence. Whether you’re experimenting with generative AI, building autonomous agents, creating intelligent tools, or exploring entirely new ideas, we want to see what you can create when given time and support.",
+  "You’ll get two full weeks to build, along with mentor meetings, hands-on workshops for all levels, and prizes celebrating the most innovative projects.",
 ];
 
 export default function About() {

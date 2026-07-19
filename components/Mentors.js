@@ -28,12 +28,12 @@ export default function Mentors() {
         >
           <span className="text-5xl block mb-4">🧑‍🏫</span>
           <h3 className="font-display text-h3 font-semibold">
-            None at the moment.
+            Mentor Bench: Now Forming
           </h3>
           <p className="text-mist mt-3 max-w-md mx-auto">
-            We're building our mentor bench for this event. If you're an
-            engineer, researcher, or founder who wants to help builders
-            level up over a weekend, we'd love to have you.
+            We're building our mentor bench for this event. Help students 
+            overcome challenges and bring their AI ideas to life while inspiring 
+            the next generation of builders.
           </p>
           <a
             href="mailto:hello@forgeai.dev?subject=Mentor%20Application"

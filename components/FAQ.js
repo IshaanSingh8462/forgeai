@@ -6,23 +6,31 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Who can participate?",
-    a: "Any current student — undergraduate, graduate, or bootcamp — anywhere in the world. First-time hackers are welcome and encouraged.",
+    a: "Any current student anywhere in the world. First-time hackers are welcome and encouraged.",
+  },
+  {
+    q: "Do I need prior coding, programming, or AI experience?",
+    a: "No! ForgeAI is meant for students with all levels of experience. Mentors and workshops will be provided for those interested in learning more.",
   },
   {
     q: "Do I need a team before I arrive?",
-    a: "No. About half of our participants form teams at our Friday mixer. Teams can have up to four members.",
+    a: "No, students can either compete solo or have up to four members.If you want a team member, join the discord and go to the team-finder channel.",
   },
   {
-    q: "Is there a cost to attend?",
-    a: "ForgeAI is completely free, including meals for all 48 hours. Limited travel stipends are available for out-of-region students.",
-  },
-  {
-    q: "What should I bring?",
-    a: "Your laptop, charger, a student ID, and anything that helps you sleep for a few hours on-site. We provide the rest.",
+    q: "What should I build?",
+    a: "Build anything you want! Use the tracks as inspiration to guide the purpose of your project.",
   },
   {
     q: "Can I use existing code or open-source libraries?",
-    a: "Yes. Frameworks, libraries, and boilerplate are fair game. The core logic of your submission needs to be built during the 48 hours.",
+    a: "Yes. Frameworks, libraries, and boilerplate are fair game. The core logic of your submission needs to be your own, no plagiarism.",
+  },
+  {
+    q: "Do I need to use AI in my project?",
+    a: "No, using AI is not mandatory, but it is strongly encouraged.",
+  },
+  {
+    q: "I have more questions. Who can I ask?",
+    a: "Join the discord and fill out a ticket, or email us at hello@forgeai.dev.",
   },
 ];
 

@@ -71,8 +71,6 @@ function TrackCard({ track, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
-      onMouseEnter={() => setExpanded(true)}
-      onMouseLeave={() => setExpanded(false)}
       className="group relative rounded-3xl glass p-8 flex flex-col"
     >
       <div className="text-4xl mb-5 transition-transform group-hover:scale-110 group-hover:drop-shadow-[0_0_18px_rgba(0,245,255,0.6)]">
