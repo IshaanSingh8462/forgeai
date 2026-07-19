@@ -35,9 +35,13 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
-          <span className="relative flex h-7 w-7 items-center justify-center">
-            <span className="absolute inset-0 rounded-full bg-flare/30 blur-md group-hover:bg-ember/50 transition-colors" />
-            <span className="relative text-lg">✦</span>
+          <span className="relative flex h-8 w-8 items-center justify-center">
+            <span className="absolute inset-0 rounded-full bg-flare/20 blur-md group-hover:bg-ember/40 transition-colors" />
+            <img
+              src="/forgeai-logo.png"
+              alt="ForgeAI logo"
+              className="relative h-7 w-7 object-contain"
+            />
           </span>
           <span className="font-display font-semibold text-lg tracking-tight">
             Forge<span className="text-ember">AI</span>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const tracks = [
-  {
+  /*{
     icon: "🩺",
     name: "AI for Healthcare",
     blurb: "Diagnostics, triage, and tools that give clinicians back their time.",
@@ -59,7 +59,7 @@ const tracks = [
       "Co-writing tools for accessibility",
       "Procedural world-building for games",
     ],
-  },
+  },*/
 ];
 
 function TrackCard({ track, index }) {
@@ -119,7 +119,7 @@ export default function Tracks() {
         >
           <span className="eyebrow">Six Tracks</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            Build what matters.
+            Build what matters. <br /> <span className="text-gradient">Coming Soon</span>
           </h2>
         </motion.div>
 

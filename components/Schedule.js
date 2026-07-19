@@ -9,23 +9,17 @@ const days = [
     date: "Sep 3",
     events: [
       { time: "12:00 PM", title: "ForgeAI Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
-      { time: "1:00 PM", title: "Start Building", desc: "Go to the Discord to find teams, ask questions, or just hang out." },
+      { time: "12:00 PM", title: "Tracks Revealed", desc: "Tracks and themes will be revealed today." },
+      { time: "12:00 PM", title: "Start Building", desc: "Go to the Discord to find teams, ask questions, or just hang out and learn." },
     ],
   },
   {
-    label: "Thurs - Sat",
-    date: "4 - 6",
+    label: "Thurs - Sun",
+    date: "4 - 9",
     events: [
-      { time: "TBD", title: "Mentor office hours", desc: "1:1 sessions with engineers from our sponsor teams." },
-      { time: "TBD", title: "Beginner Workshops", desc: "Beginner Coder? Join this to learn more about CS basics." },
-    ],
-  },
-  {
-    label: "Sun - Wed",
-    date: "7 - 9",
-    events: [
-      { time: "TBD", title: "More Mentors!", desc: "1:1 sessions with specialists from our sponsor teams." },
-      { time: "TBD", title: "More Workshops!", desc: "Fine-tuning on a budget, agent evals, and RAG in practice." },
+      { time: "----- --", title: "Mentor office hours", desc: "1:1 sessions with engineers from our sponsor teams." },
+      { time: "----- --", title: "Workshops", desc: "Beginner Coder? Join this to learn more about CS basics." },
+      { time: "----- --", title: "Ask Questions", desc: "If you have questions or need help, ask away. We and Mentors are here to support you." },
     ],
   },
   {
@@ -34,7 +28,7 @@ const days = [
     events: [
       { time: "12:00 PM", title: "Hacking ends", desc: "Submissions lock. Step away from the keyboard." },
       { time: "1:00 PM", title: "Judging", desc: "Judges will now start to grade your projects." },
-      
+      { time: "5:00 PM", title: "Gallery Opens", desc: "Look at all of the submissions here. Not graded yet, just for show." }
     ],
   },
   {
@@ -69,13 +63,13 @@ export default function Schedule() {
         </motion.div>
 
         <div ref={containerRef} className="relative">
-          <div className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-white/10 md:-translate-x-1/2" />
+          <div className="absolute z-0 left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-white/10 md:-translate-x-1/2" />
           <motion.div
             style={{ scaleY: lineHeight }}
-            className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-ember via-gold to-flare origin-top md:-translate-x-1/2"
+            className="absolute z-0 left-[27px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-ember via-gold to-flare origin-top md:-translate-x-1/2"
           />
-
-          <div className="space-y-20">
+          
+          <div className="relative z-10 space-y-20">
             {days.map((day, dayIndex) => (
               <div key={day.label} className="relative">
                 <motion.div
@@ -94,7 +88,7 @@ export default function Schedule() {
                     {day.label}
                   </span>
                 </motion.div>
-
+ 
                 <div className="space-y-6 pl-[70px] md:pl-0">
                   {day.events.map((event, i) => {
                     const alignRight = dayIndex % 2 === 0 ? i % 2 === 1 : i % 2 === 0;
