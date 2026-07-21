@@ -3,6 +3,8 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
 
+import { ReactNode } from "react";
+
 const days = [
   {
     label: "Thursday 1",
@@ -10,7 +12,24 @@ const days = [
     events: [
       { time: "12:00 PM", title: "ForgeAI Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
       { time: "12:00 PM", title: "Tracks Revealed", desc: "Tracks and themes will be revealed today." },
-      { time: "12:00 PM", title: "Start Building", desc: "Go to the Discord to find teams, ask questions, or just hang out and learn." },
+      {
+        time: "12:00 PM",
+        title: "Start Building",
+        desc: (
+          <>
+            Go to the{" "}
+            <a
+              href="https://discord.gg/9EdkYs3jc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:text-ember underline font-medium transition-colors"
+            >
+              Discord
+            </a>{" "}
+            to find teams, ask questions, or just hang out and learn.
+          </>
+        ),
+      },
     ],
   },
   {

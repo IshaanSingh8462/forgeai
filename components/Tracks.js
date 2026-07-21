@@ -1,107 +1,113 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 
-const tracks = [
-  /*{
-    icon: "🩺",
-    name: "AI for Healthcare",
-    blurb: "Diagnostics, triage, and tools that give clinicians back their time.",
-    ideas: [
-      "Early-warning models from wearable vitals",
-      "Ambient scribes for clinical notes",
-      "Radiology triage assistants",
-    ],
-  },
-  {
-    icon: "🎓",
-    name: "AI for Education",
-    blurb: "Personalized learning that adapts to how a student actually thinks.",
-    ideas: [
-      "Adaptive tutoring for underserved schools",
-      "Auto-generated practice from lecture audio",
-      "Accessibility tools for neurodivergent learners",
-    ],
-  },
-  {
-    icon: "🌎",
-    name: "AI for Climate",
-    blurb: "Models and tools for a warming, changing planet.",
-    ideas: [
-      "Satellite-driven deforestation alerts",
-      "Crop yield prediction for smallholder farms",
-      "Grid load forecasting for renewables",
-    ],
-  },
-  {
-    icon: "🏙️",
-    name: "AI for Civic Impact",
-    blurb: "Software for the systems that run our cities and governments.",
-    ideas: [
-      "Plain-language legislation summarizers",
-      "Disaster response coordination tools",
-      "Transit accessibility mapping",
-    ],
-  },
-  {
-    icon: "🛠️",
-    name: "AI Dev Tools",
-    blurb: "Infrastructure and tooling that make builders faster.",
-    ideas: ["Agent debugging tools", "Eval frameworks for small teams", "Local-first inference tooling"],
-  },
-  {
-    icon: "🎨",
-    name: "AI x Creativity",
-    blurb: "Where models become a creative collaborator, not a replacement.",
-    ideas: [
-      "Generative tools for indie musicians",
-      "Co-writing tools for accessibility",
-      "Procedural world-building for games",
-    ],
-  },*/
+const lockedTracks = [
+  "Track 01",
+  "Track 02",
+  "Track 03",
+  "Track 04",
+  "Track 05",
+  "Track 06",
 ];
 
-function TrackCard({ track, index }) {
-  const [expanded, setExpanded] = useState(false);
+const lockVariants = {
+  rest: { y: 0, rotateX: 0, scale: 1 },
+  hover: {
+    y: -10,
+    rotateX: 14,
+    scale: 1.06,
+    transition: { type: "spring", stiffness: 260, damping: 18 },
+  },
+};
 
+const shackleVariants = {
+  rest: { y: 0 },
+  hover: {
+    y: -7,
+    transition: { type: "spring", stiffness: 320, damping: 14 },
+  },
+};
+
+const glowVariants = {
+  rest: { opacity: 0, scale: 0.7 },
+  hover: {
+    opacity: 1,
+    scale: 1.2,
+    transition: { duration: 0.45, ease: "easeOut" },
+  },
+};
+
+function LockIcon() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
-      className="group relative rounded-3xl glass p-8 flex flex-col"
+      variants={lockVariants}
+      style={{ transformPerspective: 700 }}
+      className="relative"
     >
-      <div className="text-4xl mb-5 transition-transform group-hover:scale-110 group-hover:drop-shadow-[0_0_18px_rgba(0,245,255,0.6)]">
-        {track.icon}
-      </div>
-      <h3 className="font-display text-h3 font-semibold mb-2">{track.name}</h3>
-      <p className="text-mist text-sm leading-relaxed">{track.blurb}</p>
+      <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
+        <defs>
+          <linearGradient id="lockBody" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FFB800" />
+            <stop offset="100%" stopColor="#FF6B00" />
+          </linearGradient>
+        </defs>
 
-      <button
-        onClick={() => setExpanded((e) => !e)}
-        className="mt-5 text-left text-sm font-semibold text-ember hover:text-gold transition-colors"
-      >
-        {expanded ? "Hide ideas" : "Explore ideas"} →
-      </button>
+        <motion.path
+          d="M20 28 V22 A12 12 0 0 1 44 22 V28"
+          stroke="#FFB800"
+          strokeWidth="5"
+          strokeLinecap="round"
+          fill="none"
+          variants={shackleVariants}
+        />
 
-      <motion.ul
-        initial={false}
-        animate={{
-          height: expanded ? "auto" : 0,
-          opacity: expanded ? 1 : 0,
-        }}
-        transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="overflow-hidden mt-3 space-y-2"
+        <rect
+          x="14"
+          y="28"
+          width="36"
+          height="26"
+          rx="7"
+          fill="url(#lockBody)"
+          stroke="#FF6B00"
+          strokeWidth="1.5"
+        />
+
+        <circle cx="32" cy="38.5" r="3.2" fill="#0C0A08" />
+        <rect x="30.2" y="40" width="3.6" height="7" rx="1.4" fill="#0C0A08" />
+      </svg>
+    </motion.div>
+  );
+}
+
+function LockedCard({ label, index }) {
+  return (
+    <motion.div
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
+      className="group relative h-64 rounded-3xl glass p-8 flex flex-col items-center justify-center overflow-hidden [perspective:800px]"
+    >
+      <motion.div
+        variants={glowVariants}
+        className="absolute h-36 w-36 rounded-full bg-ember/50 blur-3xl"
+      />
+
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
+        className="relative flex flex-col items-center"
       >
-        {track.ideas.map((idea) => (
-          <li key={idea} className="text-xs text-mist/80 pl-4 relative">
-            <span className="absolute left-0 top-1.5 h-1 w-1 rounded-full bg-flare" />
-            {idea}
-          </li>
-        ))}
-      </motion.ul>
+        <LockIcon />
+        <span className="mt-6 text-xs tracking-[0.2em] uppercase text-mist">
+          {label}
+        </span>
+        <span className="mt-1 text-[0.65rem] tracking-[0.2em] uppercase text-mist/50">
+          Locked
+        </span>
+      </motion.div>
     </motion.div>
   );
 }
@@ -119,13 +125,16 @@ export default function Tracks() {
         >
           <span className="eyebrow">Six Tracks</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            Build what matters. <br /> <span className="text-gradient">Coming Soon</span>
+            Build what matters.
           </h2>
+          <p className="text-mist mt-4 max-w-xl mx-auto">
+            Track details are still under wraps — check back soon.
+          </p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tracks.map((track, i) => (
-            <TrackCard key={track.name} track={track} index={i} />
+          {lockedTracks.map((label, i) => (
+            <LockedCard key={label} label={label} index={i} />
           ))}
         </div>
       </div>

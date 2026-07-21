@@ -37,7 +37,7 @@ export default function Prizes() {
         >
           <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-transparent to-ember/10 opacity-0 group-hover:opacity-100 transition-opacity" />
           <span className="text-6xl block mb-4">{/*🏆*/}</span>
-          <span className="eyebrow">{/*Best Overall*/}</span>
+          <span className="eyebrow">prize money coming soon</span>
           <p className="font-display text-5xl md:text-6xl font-bold text-gradient mt-3">
             Recognition & Rewards
           </p>

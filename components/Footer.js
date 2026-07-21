@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const social = [
   { label: "Instagram", href: "https://instagram.com" },
   { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Discord", href: "https://discord.com" },
+  { label: "Discord", href: "https://discord.gg/RXENwZ5nc4" },
 ];
 
 export default function Footer() {

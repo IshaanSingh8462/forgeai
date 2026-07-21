@@ -14,7 +14,21 @@ const faqs = [
   },
   {
     q: "Do I need a team before I arrive?",
-    a: "No, students can either compete solo or have up to four members.If you want a team member, join the discord and go to the team-finder channel.",
+    a: (
+      <>
+        No, students can either compete solo or have up to four members. If you
+        want a team member, join the{" "}
+        <a
+          href="https://discord.gg/RXENwZ5nc4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gold hover:text-ember underline font-medium transition-colors"
+        >
+          Discord
+        </a>{" "}
+        and go to the <strong>#team-finder</strong> channel.
+      </>
+    ),
   },
   {
     q: "What should I build?",
@@ -30,7 +44,27 @@ const faqs = [
   },
   {
     q: "I have more questions. Who can I ask?",
-    a: "Join the discord and fill out a ticket, or email us at hello@forgeai.dev.",
+    a: (
+      <>
+        Join the{" "}
+        <a
+          href="https://discord.gg/RXENwZ5nc4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gold hover:text-ember underline font-medium transition-colors"
+        >
+          Discord
+        </a>{" "}
+        and open a support ticket, or email us at{" "}
+        <a
+          href="mailto:hello@forgeai.dev"
+          className="text-gold hover:text-ember underline font-medium transition-colors"
+        >
+          hello@forgeai.dev
+        </a>
+        .
+      </>
+    ),
   },
 ];
 
