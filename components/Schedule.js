@@ -8,14 +8,14 @@ import { ReactNode } from "react";
 const days = [
   {
     label: "Thursday 1",
-    date: "Sep 3",
+    date: "Oct 3",
     events: [
       { time: "12:00 PM", title: "ForgeAI Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
       { time: "12:00 PM", title: "Tracks Revealed", desc: "Tracks and themes will be revealed today." },
       {
         time: "12:00 PM",
         title: "Start Building",
-        desc: (
+        desc: ( 
           <>
             Go to the{" "}
             <a
@@ -43,7 +43,7 @@ const days = [
   },
   {
     label: "Thursday 2",
-    date: "Sep 10",
+    date: "Oct 10",
     events: [
       { time: "12:00 PM", title: "Hacking ends", desc: "Submissions lock. Step away from the keyboard." },
       { time: "1:00 PM", title: "Judging", desc: "Judges will now start to grade your projects." },
@@ -52,7 +52,7 @@ const days = [
   },
   {
     label: "Saturday",
-    date: "Sep 12",
+    date: "Oct 12",
     events: [
       { time: "3:00 PM", title: "Winners Announced", desc: "Awards and prize checks given out." },
     ],

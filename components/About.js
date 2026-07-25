@@ -31,7 +31,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-h2 font-bold mt-3 mb-8"
           >
-            Where students forge
+            Where students <span className="text-gradient">forge</span>
             <br /> the future with AI.
           </motion.h2>
 

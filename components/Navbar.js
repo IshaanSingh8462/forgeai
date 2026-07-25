@@ -38,7 +38,7 @@ export default function Navbar() {
           <span className="relative flex h-8 w-8 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-flare/20 blur-md group-hover:bg-ember/40 transition-colors" />
             <img
-              src="/forgeai-logo.png"
+              src="/ForgeHacks-Cinder-Face-RBG.png"
               alt="ForgeAI logo"
               className="relative h-7 w-7 object-contain"
             />
