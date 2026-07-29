@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import NeuralField from "./NeuralField";
 
-const REGISTRATION_DEADLINE = new Date();
+const REGISTRATION_DEADLINE = new Date("2026-10-10T12:00:00-04:00");
 REGISTRATION_DEADLINE.setDate(REGISTRATION_DEADLINE.getDate() + 86);
 
 function useCountdown(target) {
@@ -53,7 +53,7 @@ export default function Hero() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
   const bgY = useTransform(scrollYProgress, [0, 1], [0, 80]);
 
-  const { days, hours, minutes, seconds } = useCountdown(REGISTRATION_DEADLINE);
+  const { days, hours, minutes, seconds, done } = useCountdown(REGISTRATION_DEADLINE);
 
   return (
     <section
@@ -125,16 +125,22 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.7 }}
           className="mt-16 inline-flex flex-col items-center gap-4 glass rounded-3xl px-8 py-6"
         >
-          <span className="eyebrow">Registration closes in</span>
-          <div className="flex items-center gap-4 md:gap-8">
-            <TimeUnit value={days} label="Days" />
-            <span className="text-2xl text-white/20 font-display">:</span>
-            <TimeUnit value={hours} label="Hrs" />
-            <span className="text-2xl text-white/20 font-display">:</span>
-            <TimeUnit value={minutes} label="Min" />
-            <span className="text-2xl text-white/20 font-display">:</span>
-            <TimeUnit value={seconds} label="Sec" />
-          </div>
+          {done ? (
+            <span className="eyebrow text-flare">Registration is now closed</span>
+          ) : (
+            <>
+              <span className="eyebrow">Registration closes in</span>
+              <div className="flex items-center gap-4 md:gap-8">
+                <TimeUnit value={days} label="Days" />
+                <span className="text-2xl text-white/20 font-display">:</span>
+                <TimeUnit value={hours} label="Hrs" />
+                <span className="text-2xl text-white/20 font-display">:</span>
+                <TimeUnit value={minutes} label="Min" />
+                <span className="text-2xl text-white/20 font-display">:</span>
+                <TimeUnit value={seconds} label="Sec" />
+              </div>
+            </>
+          )}
         </motion.div>
       </motion.div>
     </section>

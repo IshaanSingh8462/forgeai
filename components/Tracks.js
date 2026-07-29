@@ -2,112 +2,50 @@
 
 import { motion } from "framer-motion";
 
-const lockedTracks = [
-  "Track 01",
-  "Track 02",
-  "Track 03",
-  "Track 04",
-  "Track 05",
-  "Track 06",
+const tracks = [
+  { name: "AI + Healthcare", blurb: "Tools that improve care, access, or wellbeing." },
+  { name: "AI + Education", blurb: "Reimagining how people learn and teach." },
+  { name: "AI + Climate", blurb: "Tackling sustainability and environmental challenges." },
+  { name: "AI + Creativity", blurb: "Pushing the boundaries of art, media, and expression." },
+  { name: "AI for Civic Impact", blurb: "Strengthening communities and public life." },
+  { name: "AI + Dev Tools", blurb: "Building the tools that build the future." },
 ];
-
-const lockVariants = {
-  rest: { y: 0, rotateX: 0, scale: 1 },
-  hover: {
-    y: -10,
-    rotateX: 14,
-    scale: 1.06,
-    transition: { type: "spring", stiffness: 260, damping: 18 },
-  },
-};
-
-const shackleVariants = {
-  rest: { y: 0 },
-  hover: {
-    y: -7,
-    transition: { type: "spring", stiffness: 320, damping: 14 },
-  },
-};
-
-const glowVariants = {
-  rest: { opacity: 0, scale: 0.7 },
-  hover: {
-    opacity: 1,
-    scale: 1.2,
-    transition: { duration: 0.45, ease: "easeOut" },
-  },
-};
 
 function LockIcon() {
   return (
-    <motion.div
-      variants={lockVariants}
-      style={{ transformPerspective: 700 }}
-      className="relative"
-    >
-      <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
-        <defs>
-          <linearGradient id="lockBody" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#FFB800" />
-            <stop offset="100%" stopColor="#FF6B00" />
-          </linearGradient>
-        </defs>
-
-        <motion.path
-          d="M20 28 V22 A12 12 0 0 1 44 22 V28"
-          stroke="#FFB800"
-          strokeWidth="5"
-          strokeLinecap="round"
-          fill="none"
-          variants={shackleVariants}
-        />
-
-        <rect
-          x="14"
-          y="28"
-          width="36"
-          height="26"
-          rx="7"
-          fill="url(#lockBody)"
-          stroke="#FF6B00"
-          strokeWidth="1.5"
-        />
-
-        <circle cx="32" cy="38.5" r="3.2" fill="#0C0A08" />
-        <rect x="30.2" y="40" width="3.6" height="7" rx="1.4" fill="#0C0A08" />
-      </svg>
-    </motion.div>
+    <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+      <defs>
+        <linearGradient id="lockBody2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#FFB800" />
+          <stop offset="100%" stopColor="#FF6B00" />
+        </linearGradient>
+      </defs>
+      <path d="M20 28 V22 A12 12 0 0 1 44 22 V28" stroke="#FFB800" strokeWidth="5" strokeLinecap="round" fill="none" />
+      <rect x="14" y="28" width="36" height="26" rx="7" fill="url(#lockBody2)" stroke="#FF6B00" strokeWidth="1.5" />
+      <circle cx="32" cy="38.5" r="3.2" fill="#0C0A08" />
+      <rect x="30.2" y="40" width="3.6" height="7" rx="1.4" fill="#0C0A08" />
+    </svg>
   );
 }
 
-function LockedCard({ label, index }) {
+function TrackCard({ track, index }) {
   return (
     <motion.div
-      initial="rest"
-      whileHover="hover"
-      animate="rest"
-      className="group relative h-64 rounded-3xl glass p-8 flex flex-col items-center justify-center overflow-hidden [perspective:800px]"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, delay: index * 0.07, ease: "easeOut" }}
+      whileHover={{ y: -6 }}
+      className="rounded-2xl glass p-7 flex flex-col gap-3"
     >
-      <motion.div
-        variants={glowVariants}
-        className="absolute h-36 w-36 rounded-full bg-ember/50 blur-3xl"
-      />
-
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.6, delay: index * 0.08, ease: "easeOut" }}
-        className="relative flex flex-col items-center"
-      >
+      <h3 className="font-display text-lg font-semibold">{track.name}</h3>
+      <p className="text-sm text-mist leading-relaxed">{track.blurb}</p>
+      <div className="mt-3 flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-3 py-1.5 w-fit">
         <LockIcon />
-        <span className="mt-6 text-xs tracking-[0.2em] uppercase text-mist">
-          {label}
+        <span className="text-[0.65rem] tracking-[0.15em] uppercase text-mist">
+          Prompt locked
         </span>
-        <span className="mt-1 text-[0.65rem] tracking-[0.2em] uppercase text-mist/50">
-          Locked
-        </span>
-      </motion.div>
+      </div>
     </motion.div>
   );
 }
@@ -121,20 +59,29 @@ export default function Tracks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
           <span className="eyebrow">Six Tracks</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            Build what matters.
+            Build within the theme.
           </h2>
-          <p className="text-mist mt-4 max-w-xl mx-auto">
-            Track details are still under wraps — check back soon.
-          </p>
         </motion.div>
 
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="text-mist text-center max-w-xl mx-auto mb-16 text-sm"
+        >
+          Each track's actual prompt drops on Day 1 — you'll be solving a
+          specific problem, not building anything you want. Come with skills
+          and an open mind, not a finished idea.
+        </motion.p>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {lockedTracks.map((label, i) => (
-            <LockedCard key={label} label={label} index={i} />
+          {tracks.map((track, i) => (
+            <TrackCard key={track.name} track={track} index={i} />
           ))}
         </div>
       </div>

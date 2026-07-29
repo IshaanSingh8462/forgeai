@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import NeuralField from "./NeuralField";
+import BuildVisual from "./BuildVisual";
 
 const paragraphs = [
   "This is the first edition of ForgeHacks, created for one reason: to give innovative students a space to invent, collaborate, and grow without limits.",
@@ -59,9 +60,7 @@ export default function About() {
           className="relative aspect-square rounded-3xl glass overflow-hidden"
         >
           <NeuralField className="absolute inset-0 w-full h-full" nodeCount={18} />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-display text-7xl animate-float">✦</span>
-          </div>
+          <BuildVisual />
         </motion.div>
       </div>
     </section>
