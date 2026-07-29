@@ -8,6 +8,7 @@ const links = [
   { label: "Tracks", href: "#tracks" },
   { label: "Schedule", href: "#schedule" },
   { label: "Prizes", href: "#prizes" },
+  { label: "Mentors", href: "#mentors" },
   { label: "Sponsors", href: "#sponsors" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -44,7 +45,7 @@ export default function Navbar() {
             />
           </span>
           <span className="font-display font-semibold text-lg tracking-tight">
-            Forge<span className="text-ember">AI</span>
+            Forge<span className="text-ember">Hacks</span>
           </span>
         </a>
 

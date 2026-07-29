@@ -10,7 +10,7 @@ const days = [
     label: "Thursday 1",
     date: "Oct 3",
     events: [
-      { time: "12:00 PM", title: "ForgeAI Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
+      { time: "12:00 PM", title: "ForgeHacks Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
       { time: "12:00 PM", title: "Tracks Revealed", desc: "Tracks and themes will be revealed today." },
       {
         time: "12:00 PM",

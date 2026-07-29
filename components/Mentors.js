@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Mentors() {
   return (
-    <section className="relative py-28 px-6">
+    <section id="mentors" className="relative py-28 px-6">
       <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

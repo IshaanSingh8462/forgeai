@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "Do I need prior coding, programming, or AI experience?",
-    a: "No! ForgeAI is meant for students with all levels of experience. Mentors and workshops will be provided for those interested in learning more.",
+    a: "No! ForgeHacks is meant for students with all levels of experience. Mentors and workshops will be provided for those interested in learning more.",
   },
   {
     q: "Do I need a team before I arrive?",
@@ -57,10 +57,10 @@ const faqs = [
         </a>{" "}
         and open a support ticket, or email us at{" "}
         <a
-          href="mailto:hello@forgeai.dev"
+          href="mailto:forgeaihackathon@gmail.com"
           className="text-gold hover:text-ember underline font-medium transition-colors"
         >
-          hello@forgeai.dev
+          forgeaihackathon@gmail.com
         </a>
         .
       </>

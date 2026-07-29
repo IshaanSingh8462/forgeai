@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           className="mx-auto mt-6 max-w-2xl text-lg text-mist"
         >
-          September 3 - 10, 2026
+          October 3 - 10, 2026
         </motion.p>
 
         <motion.div

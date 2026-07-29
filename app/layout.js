@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "ForgeAI — Forge the Future with AI",
+  title: "ForgeHacks — Forge the Future with AI",
   description:
     "The international 48-hour student hackathon where ambitious builders create impactful AI solutions.",
 };

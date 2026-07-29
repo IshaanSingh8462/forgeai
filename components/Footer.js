@@ -27,7 +27,7 @@ export default function Footer() {
             Join hundreds of other high school and college students building with AI.
           </p>
           <a
-            href="mailto:hello@forgeai.dev"
+            href="mailto:forgeaihackathon@gmail.com"
             className="inline-block mt-8 rounded-full bg-gradient-to-r from-ember to-gold px-10 py-4 font-semibold text-void shadow-ember hover:shadow-[0_0_60px_rgba(255,107,0,0.55)] hover:scale-[1.03] transition-all"
           >
             Register Now
@@ -39,10 +39,10 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="font-display font-semibold text-lg">
-              Forge<span className="text-ember">AI</span>
+              Forge<span className="text-ember">Hacks</span>
             </span>
             <p className="text-sm text-mist mt-1">
-              hello@forgeai.dev · Made by students, for students.
+              forgeaihackathon@gmail.com · Made by students, for students.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-center text-xs text-mist/50 mt-10">
-          © {new Date().getFullYear()} ForgeAI. All rights reserved.
+          © {new Date().getFullYear()} ForgeHacks. All rights reserved.
         </p>
       </footer>
     </>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const trackPrizes = [
   { track: "AI for Healthcare", amount: "Certificates" },
-  { track: "AI for Education", amount: "Featured on ForgeAI" },
+  { track: "AI for Education", amount: "Featured on ForgeHacks" },
   { track: "AI for Climate", amount: "Mentorship" },
   { track: "AI for Civic Impact", amount: "Audience Favorite" },
   /*{ track: "AI Dev Tools", amount: "TBD" },
