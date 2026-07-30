@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 const social = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "Instagram", href: "https://www.instagram.com/forgehackathon/" },
+  { label: "DevPost", href: "https://forgehacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*p9zpyu*_gcl_au*MTQyMTkxOTA4MS4xNzgxMDYyNDIz*_ga*Mzc3ODk4NjkuMTc4MTA2MjQyMw..*_ga_0YHJK3Y10M*czE3ODUzNTI2MjAkbzU0JGcxJHQxNzg1MzYxODM0JGoxJGwwJGgw" },
   { label: "Discord", href: "https://discord.gg/RXENwZ5nc4" },
 ];
 
@@ -27,7 +27,7 @@ export default function Footer() {
             Join hundreds of other high school and college students building with AI.
           </p>
           <a
-            href="mailto:forgeaihackathon@gmail.com"
+            href="https://forgehacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*p9zpyu*_gcl_au*MTQyMTkxOTA4MS4xNzgxMDYyNDIz*_ga*Mzc3ODk4NjkuMTc4MTA2MjQyMw..*_ga_0YHJK3Y10M*czE3ODUzNTI2MjAkbzU0JGcxJHQxNzg1MzYxODM0JGoxJGwwJGgw"
             className="inline-block mt-8 rounded-full bg-gradient-to-r from-ember to-gold px-10 py-4 font-semibold text-void shadow-ember hover:shadow-[0_0_60px_rgba(255,107,0,0.55)] hover:scale-[1.03] transition-all"
           >
             Register Now
