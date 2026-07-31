@@ -5,10 +5,15 @@ import { useEffect, useRef, useState } from "react";
 import NeuralField from "./NeuralField";
 
 const REGISTRATION_DEADLINE = new Date("2026-10-10T12:00:00-04:00");
-REGISTRATION_DEADLINE.setDate(REGISTRATION_DEADLINE.getDate() + 86);
 
 function useCountdown(target) {
-  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [time, setTime] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    done: false,
+  });
 
   useEffect(() => {
     const tick = () => {
@@ -17,7 +22,13 @@ function useCountdown(target) {
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      setTime({ days, hours, minutes, seconds });
+      setTime({
+        days,
+        hours,
+        minutes,
+        seconds,
+        done: diff === 0,
+      });
     };
     tick();
     const id = setInterval(tick, 1000);
