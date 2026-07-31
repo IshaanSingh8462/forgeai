@@ -6,9 +6,9 @@ const tracks = [
   { name: "AI + Healthcare", blurb: "Tools that improve care, access, or wellbeing." },
   { name: "AI + Education", blurb: "Reimagining how people learn and teach." },
   { name: "AI + Climate", blurb: "Tackling sustainability and environmental challenges." },
+  { name: "AI + Business", blurb: "Automating workflows and driving smarter decisions." },
+  { name: "AI + Cybersecurity", blurb: "Protecting digital systems, privacy, and infrastructure." },
   { name: "AI + Creativity", blurb: "Pushing the boundaries of art, media, and expression." },
-  { name: "AI for Civic Impact", blurb: "Strengthening communities and public life." },
-  { name: "AI + Dev Tools", blurb: "Building the tools that build the future." },
 ];
 
 function LockIcon() {
