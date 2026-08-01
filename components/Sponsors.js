@@ -35,7 +35,7 @@ export default function Sponsors() {
           access to innovative AI projects, connect with top student talent, and showcase your brand to hundreds of ambitious builders.
           </p>
           <a
-            href="mailto:hello@forgeai.dev?subject=Sponsorship%20Inquiry"
+            href="https://forms.gle/AaMs5xeqW7qcQdG4A"
             className="inline-block mt-6 rounded-full bg-gradient-to-r from-ember to-gold px-7 py-3 font-semibold text-void shadow-ember hover:shadow-[0_0_50px_rgba(255,107,0,0.5)] transition-shadow"
           >
             Become a Sponsor
