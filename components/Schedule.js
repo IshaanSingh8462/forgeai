@@ -7,7 +7,7 @@ import { ReactNode } from "react";
 
 const days = [
   {
-    label: "Thursday 1",
+    label: "Saturday",
     date: "Oct 3",
     events: [
       { time: "12:00 PM", title: "ForgeHacks Starts!", desc: "Workshops, Mentor Meetings, and more start here." },
@@ -33,7 +33,7 @@ const days = [
     ],
   },
   {
-    label: "Thurs - Sun",
+    label: "Sun - Sat",
     date: "4 - 9",
     events: [
       { time: "----- --", title: "Mentor office hours", desc: "1:1 sessions with engineers from our sponsor teams." },
@@ -42,7 +42,7 @@ const days = [
     ],
   },
   {
-    label: "Thursday 2",
+    label: "Saturday 2",
     date: "Oct 10",
     events: [
       { time: "12:00 PM", title: "Hacking ends", desc: "Submissions lock. Step away from the keyboard." },
@@ -51,10 +51,19 @@ const days = [
     ],
   },
   {
-    label: "Saturday",
+    label: "Sat/Sun",
+    date: "10 - 11",
+    events: [
+      { time: "----- --", title: "Judging weekend", desc: "Judges will be grading all of your projects." },
+      { time: "----- --", title: "Public Voting", desc: "Vote for your favorite projects" },
+      { time: "----- --", title: "Provide Feedback", desc: "This is out first hackathon, so we would really appreciate some feedback to do even better next time!" },
+    ],
+  },
+  {
+    label: "Monday",
     date: "Oct 12",
     events: [
-      { time: "3:00 PM", title: "Winners Announced", desc: "Awards and prize checks given out." },
+      { time: "3:00 PM", title: "Winners Announced", desc: "Winners will be revealed, and prizes will be given out!" },
     ],
   },
 ];
