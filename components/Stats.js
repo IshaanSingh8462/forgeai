@@ -51,7 +51,7 @@ export default function Stats() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="eyebrow">Scale</span>
+          <span className="eyebrow">Expected Scale</span>
           <h2 className="font-display text-h2 font-bold mt-3">
             
           </h2>

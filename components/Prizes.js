@@ -39,8 +39,7 @@ export default function Prizes() {
             More than a certificate.
           </p>
           <p className="text-mist mt-4 max-w-md mx-auto text-sm">
-            Cash and credit prizes are in the works for a future edition —
-            for now, here's what every builder walks away with.
+            Cash and credit prizes are in the works. For now, here's what every builder walks away with.
           </p>
         </motion.div>
 
