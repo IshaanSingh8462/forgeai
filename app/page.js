@@ -7,6 +7,8 @@ import Tracks from "../components/Tracks";
 import Schedule from "../components/Schedule";
 import Prizes from "../components/Prizes";
 import Mentors from "../components/Mentors";
+import Ambassadors from "../components/Ambassadors";
+import Organizers from "../components/Organizers";
 import Sponsors from "../components/Sponsors";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -23,6 +25,8 @@ export default function Home() {
         <Schedule />
         <Prizes />
         <Mentors />
+        <Ambassadors />
+        <Organizers />
         <Sponsors />
         <FAQ />
       </main>
