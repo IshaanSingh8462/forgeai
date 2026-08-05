@@ -20,13 +20,28 @@ export default function Sponsors() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-52 md:w-64"
+        >
+          <a href="https://featherless.ai/" target="_blank" rel="noopener">
+            <img
+              src="/featherless.png"
+              alt="Sponsor logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
           className="rounded-3xl glass p-10 md:p-14 text-center"
         >
-          <span className="text-5xl block mb-4">🤝</span>
           <h3 className="font-display text-h3 font-semibold">
             Partners & Sponsors: Join Early
           </h3>
