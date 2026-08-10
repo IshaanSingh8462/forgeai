@@ -133,7 +133,7 @@ export default function Team() {
           </div>
 
           <a
-            href="mailto:forgeaihackathon@gmail.com?subject=Organizer%20Application"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScpuARToKC8Pn_9EidFkc4bI819v8UZSiE9b40wSibUydVVSQ/viewform"
             className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-ember to-gold px-10 py-4 font-semibold text-void shadow-ember hover:shadow-[0_0_60px_rgba(255,107,0,.45)] transition-all hover:scale-[1.02]"
           >
             Join the Team

@@ -127,7 +127,7 @@ export default function Ambassadors() {
           <div className="text-center mt-12">
 
             <a
-              href="mailto:forgeaihackathon@gmail.com?subject=Ambassador%20Application"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScj45BjroG5g-cNU2nJRcdl3FIXLKZ9RVkiMCtkQNrdczMskQ/viewform"
               className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-ember to-gold px-10 py-4 font-semibold text-void shadow-ember transition-all hover:scale-[1.02] hover:shadow-[0_0_60px_rgba(255,107,0,.45)]"
             >
               Become an Ambassador
