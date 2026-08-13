@@ -24,9 +24,9 @@ export default function Home() {
         <Tracks />
         <Schedule />
         <Prizes />
-        <Mentors />
-        <Ambassadors />
         <Organizers />
+        <Ambassadors />
+        <Mentors />
         <Sponsors />
         <FAQ />
       </main>
