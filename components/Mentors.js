@@ -131,7 +131,7 @@ export default function Mentors() {
           <div className="mt-10 flex items-center gap-8">
 
             <a
-              href="https://forms.gle/AaMs5xeqW7qcQdG4A"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSelIPzm7937j1dT61iDA6fwRG6EfitJmn7djmXrX0zCBkc8HA/viewform?usp=publish-editor"
               className="
               rounded-xl
               bg-gradient-to-r
