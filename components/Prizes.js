@@ -2,47 +2,74 @@
 
 import { motion } from "framer-motion";
 
-function StarIcon({ className = "" }) {
+const rewards = [
+  { title: "Certificates", desc: "Every team that submits a project earns one." },
+  { title: "ForgeHacks Spotlight", desc: "Standout projects get featured on our site and socials." },
+  { title: "Mentorship", desc: "Top teams get continued access to our mentor network." },
+  { title: "Audience Favorite", desc: "Voted on live by fellow hackers at the showcase." },
+];
+
+function StarIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
-      <path d="M12 2.5l2.98 6.04 6.67.97-4.83 4.7 1.14 6.64L12 17.77l-5.96 3.08 1.14-6.64-4.83-4.7 6.67-.97L12 2.5z" />
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+      <path
+        d="M12 2L14.5 9H21.5L15.5 13.5L18 20.5L12 16L6 20.5L8.5 13.5L2.5 9H9.5L12 2Z"
+        fill="url(#starGrad)"
+        stroke="#FFB800"
+        strokeWidth="1"
+        strokeLinejoin="round"
+      />
+      <defs>
+        <linearGradient id="starGrad" x1="0" y1="0" x2="24" y2="24">
+          <stop offset="0%" stopColor="#FFB800" />
+          <stop offset="100%" stopColor="#FF6B00" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 }
 
-const podium = [
-  {
-    place: "2nd Place",
-    winners: "1 winner",
-    amount: "$50",
-    extras: [],
-    border: "border-white/15",
-    glow: "",
-    lift: "md:mt-8",
-    amountClass: "text-white",
-  },
-  {
-    place: "1st Place",
-    winners: "1 winner",
-    amount: "$100",
-    extras: ["+ $300 Featherless Credits"],
-    border: "border-gold/50",
-    glow: "shadow-ember",
-    lift: "",
-    amountClass: "text-gradient",
-    featured: true,
-  },
-  {
-    place: "3rd Place",
-    winners: "1 winner",
-    amount: "$25",
-    extras: [],
-    border: "border-[#c68a4e]/40",
-    glow: "",
-    lift: "md:mt-8",
-    amountClass: "text-[#e3a969]",
-  },
-];
+function FeatherlessPerk() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="relative mx-auto max-w-2xl rounded-3xl glass p-10 md:p-14 text-center mb-8 overflow-hidden group border border-ember/20"
+    >
+      <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-ember/15 blur-[100px]" />
+      <div className="absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-gold/10 blur-[100px]" />
+
+      <div className="relative flex flex-col items-center">
+        <motion.div
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="flex h-16 w-16 items-center justify-center rounded-2xl mb-6 bg-gradient-to-br from-ember/15 to-gold/15 border border-gold/30"
+        >
+          <StarIcon />
+        </motion.div>
+
+        <span className="eyebrow">Sponsored perk · Featherless.ai</span>
+
+        <p className="font-display text-5xl md:text-6xl font-bold text-gradient mt-4">
+          $25 in free credits.
+        </p>
+
+        <p className="text-mist mt-4 max-w-md mx-auto text-sm md:text-base">
+          Every registered participant gets{" "}
+          <span className="text-white font-semibold">$25 of free API credits</span>{" "}
+          from Featherless.ai — enough to run open-weight LLMs for your project
+          without spending a dime.
+        </p>
+
+        <div className="mt-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold bg-gold/10 border border-gold/25 text-gold">
+          No credit card required · Delivered after registration
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Prizes() {
   return (
@@ -53,7 +80,7 @@ export default function Prizes() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-6"
+          className="text-center mb-16"
         >
           <span className="eyebrow">Prizes</span>
           <h2 className="font-display text-h2 font-bold mt-3">
@@ -61,90 +88,43 @@ export default function Prizes() {
           </h2>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-mist text-center max-w-xl mx-auto mb-16 text-sm"
-        >
-          Top overall placements take home real cash and credits. Every track
-          winner earns a certificate, with more track rewards still being
-          finalized.
-        </motion.p>
+        <FeatherlessPerk />
 
-        {/* Podium: Top 3 */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 items-end mb-8">
-          {podium.map((p, i) => (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="relative mx-auto max-w-2xl rounded-3xl glass p-10 md:p-14 text-center mb-14 overflow-hidden group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-transparent to-ember/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+          <span className="eyebrow">recognition & rewards</span>
+          <p className="font-display text-4xl md:text-5xl font-bold text-gradient mt-3">
+            More than a certificate.
+          </p>
+          <p className="text-mist mt-4 max-w-md mx-auto text-sm">
+            Cash prizes are in the works for future editions. For now, here's
+            what every builder walks away with.
+          </p>
+        </motion.div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {rewards.map((reward, i) => (
             <motion.div
-              key={p.place}
-              initial={{ opacity: 0, y: 30 }}
+              key={reward.title}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
-              className={`relative rounded-3xl glass border ${p.border} ${p.glow} ${p.lift} p-8 md:p-10 text-center flex flex-col items-center gap-3`}
+              transition={{ duration: 0.5, delay: i * 0.07 }}
+              className="rounded-2xl glass p-6 hover:shadow-ember transition-shadow text-center"
             >
-              {p.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-ember to-gold px-4 py-1 text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-void">
-                  Grand Prize
-                </span>
-              )}
-
-              <StarIcon className="h-6 w-6 text-gold" />
-
-              <span className="font-display text-xl font-bold mt-1">
-                {p.place}
+              <span className="font-display text-lg font-bold text-gold block">
+                {reward.title}
               </span>
-              <span className="text-xs tracking-widest uppercase text-mist">
-                {p.winners}
-              </span>
-
-              <span
-                className={`font-display font-bold mt-2 ${
-                  p.featured ? "text-5xl md:text-6xl" : "text-4xl"
-                } ${p.amountClass}`}
-              >
-                {p.amount}
-              </span>
-
-              {p.extras.map((extra) => (
-                <span key={extra} className="text-sm text-mist">
-                  {extra}
-                </span>
-              ))}
+              <p className="text-xs text-mist mt-2 leading-relaxed">{reward.desc}</p>
             </motion.div>
           ))}
         </div>
-
-        {/* Track Prizes */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="rounded-3xl glass p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left"
-        >
-          <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-ember/10 border border-ember/30 shrink-0">
-              <StarIcon className="h-5 w-5 text-gold" />
-            </div>
-            <div>
-              <span className="font-display text-xl font-bold block">
-                Track Prizes
-              </span>
-              <span className="text-xs tracking-widest uppercase text-mist">
-                6 winners &middot; one per track
-              </span>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center md:items-end gap-1">
-            <span className="font-display text-2xl font-bold text-gold">
-              Certificates
-            </span>
-            <span className="text-sm text-mist">More rewards TBD</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
