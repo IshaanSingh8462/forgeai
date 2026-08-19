@@ -10,7 +10,7 @@ const rewards = [
 ];
 
 // To swap the sponsor logo, just change this path (and drop the new file in /public).
-const PERK_SPONSOR_LOGO = "/featherless-logo.png";
+const PERK_SPONSOR_LOGO = "/featherless.png";
 const PERK_SPONSOR_NAME = "Featherless.ai";
 
 function FeatherlessPerk() {
