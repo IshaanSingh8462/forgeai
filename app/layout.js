@@ -19,6 +19,11 @@ export const metadata = {
   title: "ForgeHacks — Forge the Future with AI",
   description:
     "The international 7 day student hackathon where ambitious builders create impactful AI solutions.",
+  icons: {
+    icon: "/ForgeHacks-Cinder-Face-RBG.png",
+    shortcut: "/ForgeHacks-Cinder-Face-RBG.png",
+    apple: "/ForgeHacks-Cinder-Face-RBG.png",
+  },
 };
 
 export default function RootLayout({ children }) {
