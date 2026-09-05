@@ -42,7 +42,12 @@ export default function Footer() {
               Forge<span className="text-ember">Hacks</span>
             </span>
             <p className="text-sm text-mist mt-1">
-              forgeaihackathon@gmail.com · Made by students, for students.
+            <a
+              href="mailto:team@forgehacks.dev"
+              className="text-sm text-mist hover:text-flare transition-colors"
+            >
+              team@forgehacks.dev
+            </a> · Made by students, for students.
             </p>
           </div>
 
