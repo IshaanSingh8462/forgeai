@@ -7,7 +7,7 @@
 // violation with Google and can trigger manual actions.
 
 const SITE_URL = "https://forgehacks.dev";
-const LOGO_URL = `${SITE_URL}/cinder.png`;
+const LOGO_URL = `${SITE_URL}/ForgeHacks-Cinder-Face-RBG.png`;
 
 function JsonLd({ data }) {
   return (
@@ -26,7 +26,7 @@ export function OrganizationJsonLd() {
     name: "ForgeHacks",
     url: SITE_URL,
     logo: LOGO_URL,
-    email: "forgeaihackathon@gmail.com",
+    email: "team@forgehacks.dev",
     // Only official ForgeHacks-owned profiles that already appear in Footer.js.
     sameAs: [
       "https://www.instagram.com/forgehackathon/",

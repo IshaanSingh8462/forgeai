@@ -22,7 +22,7 @@ const inter = Inter({
 
 // Canonical production domain. Update if the real domain ever changes.
 const SITE_URL = "https://forgehacks.dev";
-const OG_IMAGE = "/ForgeHacks-Cinder-Face-RBG.png";
+const OG_IMAGE = "/cinder.png";
 
 const TITLE = "ForgeHacks 2026 — Online AI Hackathon for Students";
 const DESCRIPTION =
@@ -87,7 +87,8 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/cinder.png",
+    apple: "/cinder.png",
   },
 };
 
