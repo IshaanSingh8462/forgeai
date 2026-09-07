@@ -88,6 +88,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="eyebrow inline-block mb-6"
         >
+          ForgeHacks 2026 · Online AI Hackathon for Students
         </motion.span>
 
         <motion.h1
@@ -107,7 +108,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           className="mx-auto mt-6 max-w-2xl text-lg text-mist"
         >
-          October 3 - 10, 2026
+          October 3 - 10, 2026 · Fully online, worldwide
         </motion.p>
 
         <motion.div

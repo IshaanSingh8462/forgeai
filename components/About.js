@@ -5,7 +5,7 @@ import NeuralField from "./NeuralField";
 import BuildVisual from "./BuildVisual";
 
 const paragraphs = [
-  "This is the first edition of ForgeHacks, created for one reason: to give innovative students a space to invent, collaborate, and grow without limits.",
+  "This is the first edition of ForgeHacks, a fully online hackathon created for one reason: to give innovative students everywhere a space to invent, collaborate, and grow without limits.",
   "We're going beyond basic coding and going towards Artificial Intelligence. Whether you’re experimenting with generative AI, building autonomous agents, creating intelligent tools, or exploring entirely new ideas, we want to see what you can create when given time and support.",
   "You’ll get 10 days to build, along with mentor meetings, hands-on workshops for all levels, and prizes celebrating the most innovative projects.",
 ];

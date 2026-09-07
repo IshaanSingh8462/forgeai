@@ -2,15 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const links = [
   { label: "About", href: "#about" },
   { label: "Tracks", href: "#tracks" },
   { label: "Schedule", href: "#schedule" },
   { label: "Prizes", href: "#prizes" },
-  { label: "Team", href: "#team" },
-  { label: "Ambassadors", href: "#ambassadors" },
   { label: "Mentors", href: "#mentors" },
+  { label: "Ambassadors", href: "#ambassadors" },
+  { label: "Team", href: "#team" },
   { label: "Sponsors", href: "#sponsors" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -37,13 +38,16 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 group">
+        <a href="#top" className="flex items-center gap-2 group" aria-label="ForgeHacks home">
           <span className="relative flex h-8 w-8 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-flare/20 blur-md group-hover:bg-ember/40 transition-colors" />
-            <img
+            <Image
               src="/ForgeHacks-Cinder-Face-RBG.png"
-              alt="ForgeAI logo"
-              className="relative h-7 w-7 object-contain"
+              alt="ForgeHacks logo"
+              width={28}
+              height={28}
+              priority
+              className="relative object-contain"
             />
           </span>
           <span className="font-display font-semibold text-lg tracking-tight">
@@ -51,7 +55,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
           {links.map((link) => (
             <a
               key={link.href}
@@ -75,7 +79,8 @@ export default function Navbar() {
         <button
           className="md:hidden text-white"
           onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
         >
           <span className="block w-6 h-0.5 bg-white mb-1.5" />
           <span className="block w-6 h-0.5 bg-white mb-1.5" />

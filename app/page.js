@@ -10,12 +10,16 @@ import Mentors from "../components/Mentors";
 import Ambassadors from "../components/Ambassadors";
 import Organizers from "../components/Organizers";
 import Sponsors from "../components/Sponsors";
-import FAQ from "../components/FAQ";
+import FAQ, { faqSchema } from "../components/FAQ";
 import Footer from "../components/Footer";
+import { FaqJsonLd } from "../components/StructuredData";
 
 export default function Home() {
   return (
     <SmoothScroll>
+      {/* FAQPage schema mirrors the visible FAQ section content 1:1 —
+          see components/FAQ.js `faqSchema`. */}
+      <FaqJsonLd items={faqSchema} />
       <Navbar />
       <main className="relative">
         <Hero />
@@ -24,9 +28,9 @@ export default function Home() {
         <Tracks />
         <Schedule />
         <Prizes />
-        <Organizers />
-        <Ambassadors />
         <Mentors />
+        <Ambassadors />
+        <Organizers />
         <Sponsors />
         <FAQ />
       </main>
