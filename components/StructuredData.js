@@ -7,7 +7,7 @@
 // violation with Google and can trigger manual actions.
 
 const SITE_URL = "https://forgehacks.dev";
-const LOGO_URL = `${SITE_URL}/ForgeHacks-Cinder-Face-RBG.png`;
+const LOGO_URL = `${SITE_URL}/cinder.png`;
 
 function JsonLd({ data }) {
   return (
