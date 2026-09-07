@@ -29,7 +29,7 @@ export default function Sponsors() {
           <a href="https://featherless.ai/" target="_blank" rel="noopener">
             <img
               src="/featherless.png"
-              alt="Sponsor logo"
+              alt="Featherless logo"
               className="w-full h-auto object-contain"
             />
           </a>
@@ -45,7 +45,23 @@ export default function Sponsors() {
           <a href="https://aopsacademy.org/" target="_blank" rel="noopener">
             <img
               src="/aops-logo.png"
-              alt="Sponsor logo"
+              alt="AoPS logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://codecrafters.io/" target="_blank" rel="noopener">
+            <img
+              src="/CodeCraftersLogo.png"
+              alt="CodeCrafters logo"
               className="w-full h-auto object-contain"
             />
           </a>
