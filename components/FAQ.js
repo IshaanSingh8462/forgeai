@@ -45,7 +45,7 @@ export const faqs = [
       <>
         Registration is open on our{" "}
         <a
-          href="https://forgehacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover"
+          href="https://forgehacks-2026.devpost.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gold hover:text-ember underline font-medium transition-colors"

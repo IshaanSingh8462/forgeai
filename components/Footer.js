@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const social = [
   { label: "Instagram", href: "https://www.instagram.com/forgehackathon/" },
-  { label: "DevPost", href: "https://forgehacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*p9zpyu*_gcl_au*MTQyMTkxOTA4MS4xNzgxMDYyNDIz*_ga*Mzc3ODk4NjkuMTc4MTA2MjQyMw..*_ga_0YHJK3Y10M*czE3ODUzNTI2MjAkbzU0JGcxJHQxNzg1MzYxODM0JGoxJGwwJGgw" },
+  { label: "DevPost", href: "https://forgehacks-2026.devpost.com" },
   { label: "Discord", href: "https://discord.gg/RXENwZ5nc4" },
 ];
 
