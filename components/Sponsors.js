@@ -76,9 +76,10 @@ export default function Sponsors() {
         >
           <a href="https://momen.app/" target="_blank" rel="noopener">
             <img
-              src="/momen-logo.png"
+              src="/momen-light.png"
               alt="Momen logo"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contai"
+              brightness-0 invert
             />
           </a>
         </motion.div>
@@ -88,13 +89,13 @@ export default function Sponsors() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-8 w-104 md:w-128"
+          className="mx-auto mb-8 w-52 md:w-64"
         >
           <a href="https://tin.computer/" target="_blank" rel="noopener">
             <img
               src="/tin-logo.png"
               alt="Tin Computer logo"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain brightness-0 invert"
             />
           </a>
         </motion.div>
@@ -104,7 +105,7 @@ export default function Sponsors() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-8 w-104 md:w-128"
+          className="mx-auto mb-8 w-78 md:w-96"
         >
           <a href="https://devswarm.ai/" target="_blank" rel="noopener">
             <img
@@ -120,7 +121,7 @@ export default function Sponsors() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-8 w-104 md:w-128"
+          className="mx-auto mb-8 w-52 md:w-64"
         >
           <a href="https://cleanshot.com/" target="_blank" rel="noopener">
             <img

@@ -75,3 +75,8 @@ button:focus-visible,
     scroll-behavior: auto !important;
   }
 }
+
+.sponsor-logo {
+  /* Converts all dark parts of the image to pure white */
+  filter: brightness(0) invert(1);
+}
