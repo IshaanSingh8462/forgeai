@@ -68,6 +68,70 @@ export default function Sponsors() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://momen.app/" target="_blank" rel="noopener">
+            <img
+              src="/momen-logo.png"
+              alt="Momen logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://tin.computer/" target="_blank" rel="noopener">
+            <img
+              src="/tin-logo.png"
+              alt="Tin Computer logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://devswarm.ai/" target="_blank" rel="noopener">
+            <img
+              src="/devswarm-logo.png"
+              alt="DevSwarm logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://cleanshot.com/" target="_blank" rel="noopener">
+            <img
+              src="/cleanshot-logo.png"
+              alt="Cleanshot logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

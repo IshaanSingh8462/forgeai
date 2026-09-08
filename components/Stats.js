@@ -4,7 +4,7 @@ import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Builders" },
+  { value: 300, suffix: "+", label: "Builders" },
   { value: 10, suffix: "+", label: "Mentors" },
   { value: 7, suffix: "", label: "days" },
   { value: 6, suffix: "", label: "Tracks" },
@@ -53,7 +53,7 @@ export default function Stats() {
         >
           <span className="eyebrow">Expected Scale</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            
+            300+ Builders
           </h2>
         </motion.div>
 
