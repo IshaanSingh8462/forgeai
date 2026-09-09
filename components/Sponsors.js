@@ -79,7 +79,6 @@ export default function Sponsors() {
               src="/momen-light.png"
               alt="Momen logo"
               className="w-full h-auto object-contai"
-              brightness-0 invert
             />
           </a>
         </motion.div>

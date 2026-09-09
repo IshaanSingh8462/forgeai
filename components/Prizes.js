@@ -72,6 +72,14 @@ const perks = [
     highlight: " • Code Faster Together",
     desc: "Boost team collaboration and ship cleaner code with AI dev tools.",
   },
+  {
+    sponsor: "Tin.computer",
+    logo: "tin-logo.png",
+    headline: "$299 Credits (1-Mo Growth Plan)",
+    highlight: " • Autonomous AI Growth Agent",
+    desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    invertLogo: true,
+  },
 ];
 
 const rewards = [
@@ -188,7 +196,9 @@ function PerkCard({ perk, index }) {
         <img
           src={perk.logo}
           alt={`${perk.sponsor} logo`}
-          className="h-15 w-15 object-contain"
+          className={`h-15 w-15 object-contain ${
+            perk.invertLogo ? "brightness-0 invert" : ""
+          }`}
         />
       </div>
       <div>
@@ -233,6 +243,19 @@ export default function Prizes() {
           ) : (
             <PrizeGrid prizes={topPrizes} />
           ))}
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-16"
+        >
+          <h2 className="font-display text-h2 font-bold mt-3">
+            Participation Perks
+          </h2>
+          <span className="eyebrow">What you get just for joining</span>
+        </motion.div>
 
         {/* VERTICAL PERKS LIST */}
         <div className="flex flex-col gap-6 mb-14">
