@@ -9,7 +9,7 @@ const topPrizes = [
   {
     rank: 1,
     label: "1st Place",
-    amount: "$5830",
+    amount: "$6830",
     desc: [
       "$100 Cash",
       "$300 Featherless Credits",
@@ -36,7 +36,7 @@ const topPrizes = [
   {
     rank: 3,
     label: "3rd Place",
-    amount: "$770",
+    amount: "$1270",
     desc: [
       "$25 Cash",
       "$25 AoPS Giftcard",
