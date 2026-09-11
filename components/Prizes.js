@@ -69,7 +69,7 @@ const perks = [
   {
     sponsor: "Devswarm",
     logo: "devswarm-perk-logo.png",
-    headline: "1 Month Free Devswarm Pro",
+    headline: "($96) 1 Month Free Devswarm Pro",
     highlight: " • Code Faster Together",
     desc: "Boost team collaboration and ship cleaner code with AI dev tools.",
   },
@@ -91,7 +91,7 @@ const perks = [
   {
     sponsor: "n8n",
     logo: "n8n-logo.png",
-    headline: "1 month n8n Cloud Pro ($65)",
+    headline: "($65) 1 month n8n Cloud Pro",
     highlight: " • Automate Any Workflow",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
     logoScale: "scale-150",
