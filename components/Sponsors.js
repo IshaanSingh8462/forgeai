@@ -132,6 +132,54 @@ export default function Sponsors() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-52 md:w-64"
+        >
+          <a href="https://adaptionlabs.ai/" target="_blank" rel="noopener">
+            <img
+              src="/adaption-labs-logo.png"
+              alt="Adaption Labs logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-52 md:w-64"
+        >
+          <a href="https://www.kariaa.com/" target="_blank" rel="noopener">
+            <img
+              src="/kariaa-logo.png"
+              alt="Kariaa logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-52 md:w-64"
+        >
+          <a href="https://n8n.io/" target="_blank" rel="noopener">
+            <img
+              src="/n8n-logo.png"
+              alt="n8n logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

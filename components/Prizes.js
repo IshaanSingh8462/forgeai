@@ -14,6 +14,7 @@ const topPrizes = [
       "$100 Cash",
       "$300 Featherless Credits",
       "$2,000 Momen Credits",
+      "$1,000 Adaption Credits",
       "$50 AoPS Giftcard",
       "2-year CodeCrafters VIP for each team member (4x $720 = $2,880)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
@@ -77,9 +78,32 @@ const perks = [
     logo: "tin-logo.png",
     headline: "$299 Credits (1-Mo Growth Plan)",
     highlight: " • Autonomous AI Growth Agent",
-    desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    desc: "Tin Computer is an autonomous growth agent that connects to a project's GitHub, analytics and Stripe and ships pull requests to grow it: SEO pages, landing-page fixes, ads and support replies. Every eligible team at ForgeHacks gets $299 in Tin Computer credits, one month of the Growth plan.",
     invertLogo: true,
   },
+  {
+    sponsor: "Adaption Labs",
+    logo: "adaption-labs-logo.png",
+    headline: "$500 in Adaption platform credits",
+    highlight: " • Build Web Apps Fast",
+    desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+  },
+  {
+    sponsor: "n8n",
+    logo: "n8n-logo.png",
+    headline: "1 month n8n Cloud Pro ($65)",
+    highlight: " • Automate Any Workflow",
+    desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    logoScale: "scale-150",
+  },
+  {
+    sponsor: "Kariaa",
+    logo: "kariaa-logo.png",
+    headline: "$40 in Kariaa credits",
+    highlight: " • AI-Powered Work & Jobs",
+    desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+  },
+
 ];
 
 const rewards = [
@@ -196,9 +220,9 @@ function PerkCard({ perk, index }) {
         <img
           src={perk.logo}
           alt={`${perk.sponsor} logo`}
-          className={`h-15 w-15 object-contain ${
+          className={`h-15 w-15 object-contain transition-transform ${
             perk.invertLogo ? "brightness-0 invert" : ""
-          }`}
+          } ${perk.logoScale || ""}`} // Applied custom scale here
         />
       </div>
       <div>
