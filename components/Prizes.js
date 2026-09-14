@@ -16,6 +16,7 @@ const topPrizes = [
       "$2,000 Momen Credits",
       "$1,000 Adaption Credits",
       "$50 AoPS Giftcard",
+      "5 Saily 3GB plans",
       "2-year CodeCrafters VIP for each team member (4x $720 = $2,880)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
@@ -28,6 +29,7 @@ const topPrizes = [
     desc: [
       "$50 Cash",
       "$25 AoPS Giftcard",
+      "5 Saily 3GB plans",
       "1-year CodeCrafters VIP for each team member (4x $360 = $1,440)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
@@ -40,6 +42,7 @@ const topPrizes = [
     desc: [
       "$25 Cash",
       "$25 AoPS Giftcard",
+      "5 Saily 3GB plans",
       "6-month CodeCrafters VIP for each team member (4x $180 = $720)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",

@@ -180,6 +180,22 @@ export default function Sponsors() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-52 md:w-64"
+        >
+          <a href="https://saily.com/" target="_blank" rel="noopener">
+            <img
+              src="/saily-logo.png"
+              alt="Saily logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
