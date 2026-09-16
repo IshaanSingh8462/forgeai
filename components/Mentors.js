@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import PersonCard from "./PersonCard";
+
 const Icons = {
   Users: () => (
     <svg
@@ -16,7 +18,6 @@ const Icons = {
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
     </svg>
   ),
-
   Target: () => (
     <svg
       viewBox="0 0 24 24"
@@ -30,7 +31,6 @@ const Icons = {
       <circle cx="12" cy="12" r="2" />
     </svg>
   ),
-
   Heart: () => (
     <svg
       viewBox="0 0 24 24"
@@ -39,244 +39,177 @@ const Icons = {
       strokeWidth="2"
       className="h-5 w-5"
     >
-      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/>
+      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
     </svg>
   ),
 };
 
-export default function Mentors() {
-  const benefits = [
+const benefits = [
+  { icon: Icons.Users, text: "Inspire the next generation of AI builders" },
+  { icon: Icons.Target, text: "Share your experience and expertise" },
+  { icon: Icons.Heart, text: "Make a real impact in just a few hours" },
+];
+
+// ─────────────────────────────────────────────────────────────
+// MENTORS — one object per person. Add/remove entries freely,
+// the grid re-flows automatically (currently 8).
+//   image:    path under /public, e.g. "/mentors/jane-doe.jpg"
+//             (leave "" to show initials instead of a photo)
+//   linkedin: full profile URL, or "" to hide the LinkedIn button
+// ─────────────────────────────────────────────────────────────
+const mentors = [
   {
-    icon: Icons.Users,
-    text: "Inspire the next generation of AI builders",
+    name: "Sachin Gurjar",
+    title: "AI Researcher - Apexlayer Technologies",
+    image: "/mentors/SachinGurjar-mentor.jpg",
+    bio: "Sachin Gurjar is an AI researcher and the founder of quickcommercemap.com, which maps quick-commerce dark stores across India and several other countries. He has three IEEE papers published and four more accepted, and serves on the programme committee of IEEE ICA 2026. Before starting his own company he worked as a full-stack and blockchain engineer.",
+    linkedin: "https://linkedin.com/in/sachingurjar",
   },
   {
-    icon: Icons.Target,
-    text: "Share your experience and expertise",
+    name: "Anudeep Bonagiri",
+    title: "---",
+    image: "/mentors/AB.png",
+    bio: "---",
+    linkedin: "",
   },
   {
-    icon: Icons.Heart,
-    text: "Make a real impact in just a few hours",
+    name: "Sai Prasad Saladi",
+    title: "Senior Software Engineer / Technology Leader - U.S. Bank",
+    image: "/mentors/SaiPrasadSaladi-mentor.png",
+    bio: "Sai Prasad Saladi is a technology leader and senior software engineer with over 12 years of experience designing, developing, and modernizing enterprise-scale software platforms across financial services, digital payments, and marketing technology domains. Sai is recognized for significant research contributions and technical expertise in artificial intelligence, cloud-native engineering, and full-stack development. He is passionate about driving engineering excellence, cross-functional collaboration, and leveraging emerging technologies to deliver high-impact solutions.",
+    linkedin: "https://www.linkedin.com/in/sai-saladi",
+  },
+  {
+    name: "Swapneswar Sundar Ray",
+    title: "Assistant Vice President | Principal Machine Learning Engineer - U.S. Bank",
+    image: "/mentors/SwapneswarSundarRay-mentor.png",
+    bio: "Swapneswar Sundar Ray is an AI and software engineering leader specializing in enterprise AI, generative AI, agentic systems, cloud platforms, API architecture, cybersecurity, and responsible AI. He is an IEEE Senior Member, published author, conference reviewer, speaker, and experienced judge who has evaluated more than 100 technology and innovation submissions.",
+    linkedin: "https://www.linkedin.com/in/swapneswarsundarray/",
+  },
+  {
+    name: "Aatishkumar kumardhami",
+    title: "---",
+    image: "/mentors/AK.png",
+    bio: "---",
+    linkedin: "",
+  },
+  {
+    name: "Nilesh Dhage",
+    title: "Director Product Management - Financial Services",
+    image: "/mentors/NileshDhage-mentor.png",
+    bio: "Nilesh Dhage is a Director of Product Management and AI strategy professional with experience evaluating technology innovation, mentoring teams, and guiding products from concept to impact. As an author and technology practitioner, Nilesh brings expertise in AI product strategy, systems design, emerging technologies, and practical business value. As a hackathon judge, he assesses projects for innovation, technical feasibility, user impact, execution quality, and potential to scale.",
+    linkedin: "https://www.linkedin.com/in/nileshdhage",
+  },
+  {
+    name: "Ujwal Suresh Vanjare",
+    title: "Software Engineer - BNSF Railway",
+    image: "/mentors/UjwalSureshVanjare-mentor.png",
+    bio: "Ujwal is a Software Engineer at BNSF Railway with 3+ years of experience in backend engineering, cloud infrastructure, distributed systems, and AI. He is an AWS-certified engineer, active hackathon builder and winner across AI, cloud, and security, and has experience judging hackathons and mentoring 300+ students as a Graduate Teaching Assistant at UNC Charlotte.",
+    linkedin: "https://www.linkedin.com/in/ujwalvanjare/",
+  },
+  {
+    name: "Saiprasad Charudatta Shrikhande",
+    title: "---",
+    image: "/mentors/SS.png",
+    bio: "---",
+    linkedin: ""
   },
 ];
 
+export default function Mentors() {
   return (
-    <section
-      id="mentors"
-      className="relative overflow-hidden py-32 px-6"
-    >
+    <section id="mentors" className="relative overflow-hidden py-32 px-6">
       {/* Background Glow */}
       <div className="absolute top-1/3 right-0 h-[500px] w-[500px] rounded-full bg-ember/10 blur-[160px]" />
 
-      <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-16 items-center">
-
-        {/* LEFT CONTENT */}
+      <div className="relative mx-auto max-w-6xl">
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
+          className="text-center mb-16"
         >
-          <span className="eyebrow">
-            Mentors & Community
-          </span>
-
-          <h2 className="font-display text-6xl font-bold mt-5 leading-tight">
-            Help Builders
+          <span className="eyebrow">Mentors & Community</span>
+          <h2 className="font-display text-h2 font-bold mt-5 leading-tight">
+            Guided by builders
             <br />
-            Move{" "}
+            who've been{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-ember to-gold">
-              Forward.
+              there.
             </span>
           </h2>
-
-          <p className="text-mist text-lg mt-6 max-w-xl leading-relaxed">
-            Your guidance can be the spark that turns a stuck idea into
-            something life-changing. Join our mentor bench and help students
-            bring their AI ideas to life.
+          <p className="text-mist text-lg mt-6 max-w-xl mx-auto leading-relaxed">
+            Our mentors bring real engineering and AI experience to help
+            teams get unstuck. Hover a card to read more.
           </p>
-
-
-          {/* Benefits */}
-          <div className="mt-10 space-y-5">
-            {benefits.map((item, index) => {
-              const Icon = item.icon;
-
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.1,
-                  }}
-                  className="flex items-center gap-4"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ember/10 border border-ember/30">
-                    <Icon className="h-5 w-5 text-ember" />
-                  </div>
-
-                  <p className="text-white/80">
-                    {item.text}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-
-
-          {/* CTA */}
-          <div className="mt-10 flex items-center gap-8">
-
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSelIPzm7937j1dT61iDA6fwRG6EfitJmn7djmXrX0zCBkc8HA/viewform?usp=publish-editor"
-              className="
-              rounded-xl
-              bg-gradient-to-r
-              from-ember
-              to-gold
-              px-8
-              py-4
-              font-semibold
-              text-void
-              shadow-ember
-              transition
-              hover:scale-105
-              "
-            >
-              Become a Mentor →
-            </a>
-          </div>
-
         </motion.div>
 
+        {/* MENTOR GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+          {mentors.map((mentor, i) => (
+            <motion.div
+              key={mentor.name + i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: (i % 6) * 0.06 }}
+            >
+              <PersonCard person={mentor} />
+            </motion.div>
+          ))}
+        </div>
 
-
-        {/* RIGHT VISUAL */}
+        {/* BECOME A MENTOR CTA */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative flex justify-center items-center h-[500px]"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="glass rounded-3xl px-8 py-10 md:px-14 md:py-12 max-w-4xl mx-auto"
         >
-
-          {/* Outer Orbital Ring */}
-          <div
-            className="
-              absolute
-              top-1/2
-              left-1/2
-              h-[460px]
-              w-[460px]
-              -translate-x-1/2
-              -translate-y-1/2
-              rounded-full
-              border
-              border-ember/20
-              animate-spin-slow
-            "
-          />
-
-
-          {/* Middle Orbital Ring */}
-          <div
-            className="
-              absolute
-              top-1/2
-              left-1/2
-              h-[360px]
-              w-[360px]
-              -translate-x-1/2
-              -translate-y-1/2
-              rounded-full
-              border
-              border-gold/20
-            "
-          />
-
-
-          {/* Glow Behind Orb */}
-          <div
-            className="
-              absolute
-              top-1/2
-              left-1/2
-              h-[330px]
-              w-[330px]
-              -translate-x-1/2
-              -translate-y-1/2
-              rounded-full
-              bg-ember/10
-              blur-[80px]
-            "
-          />
-
-
-          {/* Main Mentor Platform */}
-          <div
-            className="
-              relative
-              h-[330px]
-              w-[330px]
-              rounded-full
-              bg-gradient-to-b
-              from-white/10
-              to-black
-              border
-              border-white/10
-              shadow-[0_0_80px_rgba(255,107,0,0.25)]
-              flex
-              items-center
-              justify-center
-            "
-          >
-
-            <div className="text-center">
-              <p className="text-4xl font-semibold">
-                Mentor Bench
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h3 className="font-display text-2xl md:text-3xl font-bold">
+                Want to mentor at ForgeHacks?
+              </h3>
+              <p className="text-mist mt-3 leading-relaxed">
+                Your guidance can be the spark that turns a stuck idea into
+                something life-changing. Join our mentor bench and help
+                students bring their AI ideas to life.
               </p>
 
-              <p className="text-mist mt-2">
-                Now forming
-              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSelIPzm7937j1dT61iDA6fwRG6EfitJmn7djmXrX0zCBkc8HA/viewform?usp=publish-editor"
+                className="inline-block mt-6 rounded-xl bg-gradient-to-r from-ember to-gold px-8 py-4 font-semibold text-void shadow-ember transition hover:scale-105"
+              >
+                Become a Mentor →
+              </a>
             </div>
 
+            <div className="space-y-5">
+              {benefits.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="flex items-center gap-4"
+                  >
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ember/10 border border-ember/30 shrink-0">
+                      <Icon className="h-5 w-5 text-ember" />
+                    </div>
+                    <p className="text-white/80">{item.text}</p>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
-
-
-          {/* Floating Nodes */}
-          <div
-            className="
-              absolute
-              top-[90px]
-              right-[90px]
-              h-4
-              w-4
-              rounded-full
-              bg-ember
-              shadow-ember
-            "
-          />
-
-          <div
-            className="
-              absolute
-              bottom-[100px]
-              left-[100px]
-              h-3
-              w-3
-              rounded-full
-              bg-gold
-            "
-          />
-
         </motion.div>
-
       </div>
-
     </section>
   );
 }
