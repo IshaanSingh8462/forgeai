@@ -109,10 +109,10 @@ const mentors = [
   },
   {
     name: "Saiprasad Charudatta Shrikhande",
-    title: "---",
-    image: "/mentors/SS.png",
-    bio: "---",
-    linkedin: ""
+    title: "Senior Manager - Cognizant Technology Solutions",
+    image: "/mentors/SaiprasadCharudattaShrikhande-mentor.png",
+    bio: "Saiprasad Charudatta Shrikhande is a wireless communications, cybersecurity, and cloud networking expert with over 17 years of experience designing, validating, and securing complex technology systems. His expertise spans 5G, Wi‑Fi, IoT, AI-driven analytics, and network automation, and he actively contributes to the technology community as an IEEE journal reviewer, hackathon judge, and mentor.",
+    linkedin: "https://www.linkedin.com/in/saiprasad-shrikhande-081b3b9b"
   },
 ];
 

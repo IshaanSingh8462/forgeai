@@ -27,10 +27,10 @@ const judges = [
   },
   {
     name: "Sashank Agarwal",
-    title: "---",
-    image: "/judges/SA.png",
-    bio: "---",
-    linkedin: "",
+    title: "Senior Cloud Software and Infrastructure Engineer - NVIDIA",
+    image: "/judges/SashankAgarwal-judge.png",
+    bio: "Sashank Agarwal is a Senior Engineer at NVIDIA, specializing in AI infrastructure, distributed systems, Kubernetes, and cloud-native platforms. He previously worked at Intuit and Red Hat, contributing to large-scale infrastructure, observability, and open-source technologies. His expertise spans scalable systems, cloud platforms, AI infrastructure, and developer-focused infrastructure tooling.",
+    linkedin: "https://www.linkedin.com/in/sashankagarwal/",
   },
   {
     name: "Viraj Sabhaya",
@@ -55,10 +55,10 @@ const judges = [
   },
   {
     name: "Saylee Mhatre",
-    title: "---",
-    image: "/judges/SM.png",
-    bio: "---",
-    linkedin: "",
+    title: "Director of Engineering - Electronic Arts Inc",
+    image: "/judges/SayleeMhatre-judge.png",
+    bio: "Saylee Mhatre is a Director of Engineering at Electronic Arts (EA) with 12+ years of experience building and leading large-scale gaming and technology products. Her recent work focuses heavily on AI, including generative AI, LLM-powered applications, agentic systems, AI-powered creative workflows, and the engineering infrastructure required to take AI products from prototype to production.",
+    linkedin: "https://www.linkedin.com/in/saylee-mhatre-54b3117a/",
   },
   {
     name: "Sharath Chandra Kampili",
