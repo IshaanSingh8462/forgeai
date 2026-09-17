@@ -104,7 +104,7 @@ const mentors = [
     name: "Ujwal Suresh Vanjare",
     title: "Software Engineer - BNSF Railway",
     image: "/mentors/UjwalSureshVanjare-mentor.png",
-    bio: "Ujwal is a Software Engineer at BNSF Railway with 3+ years of experience in backend engineering, cloud infrastructure, distributed systems, and AI. He is an AWS-certified engineer, active hackathon builder and winner across AI, cloud, and security, and has experience judging hackathons and mentoring 300+ students as a Graduate Teaching Assistant at UNC Charlotte.",
+    bio: "Ujwal is a Software Engineer at BNSF Railway with 3+ years of experience in backend engineering, cloud infrastructure, distributed systems, and AI. He is an AWS-certified engineer, active hackathon builder and winner across AI, cloud, and security, and has experience judging hackathons and mentoring 500+ students as a Graduate Teaching Assistant at UNC Charlotte.",
     linkedin: "https://www.linkedin.com/in/ujwalvanjare/",
   },
   {

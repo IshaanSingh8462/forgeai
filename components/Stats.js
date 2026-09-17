@@ -53,7 +53,7 @@ export default function Stats() {
         >
           <span className="eyebrow">Expected Scale</span>
           <h2 className="font-display text-h2 font-bold mt-3">
-            300+ Builders
+            500+ Builders
           </h2>
         </motion.div>
 

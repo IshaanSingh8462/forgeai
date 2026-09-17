@@ -61,6 +61,7 @@ const perks = [
     headline: "$25 free API credits",
     highlight: " • Instant Open-Source AI",
     desc: "Access 30,000+ AI models via API without managing GPUs.",
+    url: "https://featherless.ai/",
   },
   {
     sponsor: "Momen",
@@ -68,6 +69,7 @@ const perks = [
     headline: "$100 Momen credits",
     highlight: " • Build Web Apps Fast",
     desc: "Skip backend setup and launch web apps fast with zero code.",
+    url: "https://momen.app/",
   },
   {
     sponsor: "Devswarm",
@@ -75,6 +77,7 @@ const perks = [
     headline: "($96) 1 Month Free Devswarm Pro",
     highlight: " • Code Faster Together",
     desc: "Boost team collaboration and ship cleaner code with AI dev tools.",
+    url: "https://devswarm.ai/",
   },
   {
     sponsor: "Tin.computer",
@@ -83,6 +86,7 @@ const perks = [
     highlight: " • Autonomous AI Growth Agent",
     desc: "Tin Computer is an autonomous growth agent that connects to a project's GitHub, analytics and Stripe and ships pull requests to grow it: SEO pages, landing-page fixes, ads and support replies. Every eligible team at ForgeHacks gets $299 in Tin Computer credits, one month of the Growth plan.",
     invertLogo: true,
+    url: "https://tin.computer",
   },
   {
     sponsor: "Adaption Labs",
@@ -90,6 +94,7 @@ const perks = [
     headline: "$500 in Adaption platform credits",
     highlight: " • Build Web Apps Fast",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    url: "https://adaptionlabs.ai/",
   },
   {
     sponsor: "n8n",
@@ -98,6 +103,7 @@ const perks = [
     highlight: " • Automate Any Workflow",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
     logoScale: "scale-150",
+    url: "https://n8n.io/",
   },
   {
     sponsor: "Kariaa",
@@ -105,6 +111,7 @@ const perks = [
     headline: "$40 in Kariaa credits",
     highlight: " • AI-Powered Work & Jobs",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    url: "https://www.kariaa.com/",
   },
 
 ];
@@ -211,21 +218,16 @@ function PerkCard({ perk, index }) {
     ? perk.headline.split(perk.highlight)
     : [perk.headline, ""];
 
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="rounded-3xl glass p-7 md:p-8 flex flex-col md:flex-row items-center gap-6 text-center md:text-left border border-white/10"
-    >
+  // Base layout contents
+  const cardContent = (
+    <>
       <div className="h-20 w-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 overflow-hidden">
         <img
           src={perk.logo}
           alt={`${perk.sponsor} logo`}
           className={`h-15 w-15 object-contain transition-transform ${
             perk.invertLogo ? "brightness-0 invert" : ""
-          } ${perk.logoScale || ""}`} // Applied custom scale here
+          } ${perk.logoScale || ""}`}
         />
       </div>
       <div>
@@ -239,6 +241,40 @@ function PerkCard({ perk, index }) {
         </p>
         <p className="text-mist text-sm mt-2 max-w-xl">{perk.desc}</p>
       </div>
+    </>
+  );
+
+  const className =
+    "rounded-3xl glass p-7 md:p-8 flex flex-col md:flex-row items-center gap-6 text-center md:text-left border border-white/10 transition-all hover:border-white/20";
+
+  // If a URL is provided, render as an anchor link tag
+  if (perk.url) {
+    return (
+      <motion.a
+        href={perk.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
+        className={`${className} block hover:scale-[1.01] cursor-pointer`}
+      >
+        {cardContent}
+      </motion.a>
+    );
+  }
+
+  // Fallback for perks without a URL
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className={className}
+    >
+      {cardContent}
     </motion.div>
   );
 }
