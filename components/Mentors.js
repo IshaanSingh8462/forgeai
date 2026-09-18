@@ -67,10 +67,10 @@ const mentors = [
   },
   {
     name: "Anudeep Bonagiri",
-    title: "---",
-    image: "/mentors/AB.png",
-    bio: "---",
-    linkedin: "",
+    title: "CEO & Co-founder - Cruze Maps",
+    image: "/mentors/AnudeepBonagiri-mentor.png",
+    bio: "Anudeep Bonagiri is the CEO and Co-founder of Cruze Maps, a fleet traffic optimization startup that uses physics-informed neural networks and multi-agent reinforcement learning to eliminate phantom traffic jams for commercial fleets. He studies Computer Science and Neuroscience at UTSA, where he conducts AI research at the CARE AI Laboratory on LLM evaluation and multi-agent systems. He is a winner of HackRice and the Draper Data Science Competition.",
+    linkedin: "https://www.linkedin.com/in/anudeep-bonagiri/",
   },
   {
     name: "Sai Prasad Saladi",

@@ -82,11 +82,11 @@ const judges = [
     linkedin: "",
   },
   {
-    name: "Tamim Nangrar",
-    title: "---",
-    image: "/judges/TN.png",
-    bio: "---",
-    linkedin: "",
+    name: "Tamim Sangrar",
+    title: "Senior Product Manager - AI Identity Governance - Microsoft",
+    image: "/judges/TamimSangrar-judge.png",
+    bio: "Senior Product Manager at Microsoft, focused on governance and privileged-access capabilities for non-human identities, including AI agents. I have spent the past 4+ years thinking about identity and access management, with expertise in cybersecurity, regulatory compliance, GenAI, and product prototyping.",
+    linkedin: "https://www.linkedin.com/in/tamimsangrar/",
   },
   {
     name: "Aishwarya Kannoth Putlumbath",
