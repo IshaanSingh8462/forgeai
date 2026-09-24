@@ -13,10 +13,10 @@ import PersonCard from "./PersonCard";
 const judges = [
   {
     name: "Aditya Shrivastava",
-    title: "---",
-    image: "/judges/AS.png",
-    bio: "---",
-    linkedin: "",
+    title: "Software Engineer - Barclays",
+    image: "/judges/AdityaShrivastava-judge.png",
+    bio: "I'm a software engineer with 3+ years of experience designing and building scalable distributed systems. Currently, I work at Barclays, where I develop reliable backend services and distributed applications.  I'm currently diving deep into Artificial Intelligence, with a strong focus on LLMs, AI Agents, MLOps, and building production-ready AI systems. I enjoy exploring how AI can be integrated into scalable software to solve real-world engineering problems.",
+    linkedin: "https://www.linkedin.com/in/aditya-shrivastava30/",
   },
   {
     name: "Nevasini Sasikumar",
@@ -41,10 +41,10 @@ const judges = [
   },
   {
     name: "Prakshal Doshi",
-    title: "---",
-    image: "/judges/PD.png",
-    bio: "---",
-    linkedin: "",
+    title: "Site Reliability Engineer - Apple",
+    image: "/judges/PrakshalDoshi-judge.png",
+    bio: "Architect and build infrastructure that's reliable, available, secure and performing",
+    linkedin: "https://www.linkedin.com/in/prakshal-doshi/",
   },
   {
     name: "Eesha Tariq",
