@@ -203,11 +203,10 @@ export default function Sponsors() {
           className="rounded-3xl glass p-10 md:p-14 text-center"
         >
           <h3 className="font-display text-h3 font-semibold">
-            Partners & Sponsors: Join Early
+            Partners & Sponsors
           </h3>
           <p className="text-mist mt-3 max-w-md mx-auto">
-            We're opening up sponsorship for this event soon. Gain early
-          access to innovative AI projects, connect with top student talent, and showcase your brand to hundreds of ambitious builders.
+            Sponsorship for this event are open. Connect with top student talent and showcase your brand to hundreds of ambitious builders.
           </p>
           <a
             href="https://forms.gle/AaMs5xeqW7qcQdG4A"

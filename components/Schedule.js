@@ -86,7 +86,7 @@ export default function Schedule() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="eyebrow">48 Hours</span>
+          <span className="eyebrow">7 days</span>
           <h2 className="font-display text-h2 font-bold mt-3">The schedule.</h2>
         </motion.div>
 
