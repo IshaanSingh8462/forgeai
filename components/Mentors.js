@@ -161,7 +161,7 @@ export default function Mentors() {
         </div>
 
         {/* BECOME A MENTOR CTA */}
-        <motion.div
+       {/* <motion.div 
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -208,7 +208,7 @@ export default function Mentors() {
               })}
             </div>
           </div>
-        </motion.div>
+        </motion.div>  */}
       </div>
     </section>
   );
