@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import NeuralField from "./NeuralField";
 
-const REGISTRATION_DEADLINE = new Date("2026-10-10T12:00:00-04:00");
+const TRACK_PROMPTS_RELEASED = new Date("2026-10-03T12:00:00-04:00");
 
 function useCountdown(target) {
   const [time, setTime] = useState({
@@ -64,7 +64,7 @@ export default function Hero() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
   const bgY = useTransform(scrollYProgress, [0, 1], [0, 80]);
 
-  const { days, hours, minutes, seconds, done } = useCountdown(REGISTRATION_DEADLINE);
+  const { days, hours, minutes, seconds, done } = useCountdown(TRACK_PROMPTS_RELEASED);
 
   return (
     <section
@@ -141,7 +141,7 @@ export default function Hero() {
             <span className="eyebrow text-flare">Registration is now closed</span>
           ) : (
             <>
-              <span className="eyebrow">Registration closes in</span>
+              <span className="eyebrow">Track Prompts revealed in</span>
               <div className="flex items-center gap-4 md:gap-8">
                 <TimeUnit value={days} label="Days" />
                 <span className="text-2xl text-white/20 font-display">:</span>
