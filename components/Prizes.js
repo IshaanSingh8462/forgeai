@@ -113,6 +113,14 @@ const perks = [
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
     url: "https://www.kariaa.com/",
   },
+  {
+    sponsor: "YouCam API - Perfect Corp",
+    logo: "YC-API-logo.png",
+    headline: "$27.50 in YouCam API credits",
+    highlight: " • Visual Experiences APIs",
+    desc: "AI-powered APIs for image generation, editing, enhancement, and more.",
+    url: "https://yce.perfectcorp.com/ai-api ",
+  },
 
 ];
 
