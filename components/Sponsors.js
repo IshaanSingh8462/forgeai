@@ -200,12 +200,28 @@ export default function Sponsors() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-8 w-62 md:w-80"
+          className="mx-auto mb-8 w-104 md:w-128"
         >
           <a href="https://yce.perfectcorp.com/ai-api " target="_blank" rel="noopener">
             <img
               src="/YC-API-logo.png"
               alt="Perfectcorp logo"
+              className="w-full h-auto object-contain"
+            />
+          </a>
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-8 w-104 md:w-128"
+        >
+          <a href="https://agentboxd.com/" target="_blank" rel="noopener">
+            <img
+              src="/agentboxd-logo-dark.png"
+              alt="Agentboxd logo"
               className="w-full h-auto object-contain"
             />
           </a>

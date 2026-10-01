@@ -102,6 +102,7 @@ const perks = [
     headline: "($65) 1 month n8n Cloud Pro",
     highlight: " • Automate Any Workflow",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
+    availability: "First Come, First Served - First 300 Redemptions",
     logoScale: "scale-150",
     url: "https://n8n.io/",
   },
@@ -119,7 +120,17 @@ const perks = [
     headline: "$27.50 in YouCam API credits",
     highlight: " • Visual Experiences APIs",
     desc: "AI-powered APIs for image generation, editing, enhancement, and more.",
+    availability: "First Come, First Served - First 1000 Redemptions",
     url: "https://yce.perfectcorp.com/ai-api ",
+  },
+  {
+    sponsor: "Agentboxd",
+    logo: "agentboxd-logo.png",
+    headline: "30 days of the Agentboxd Builder plan ($15)",
+    highlight: " • Give AI Agents Their Own Email Inboxes",
+    desc: "Give AI agents real email inboxes and check every incoming email for prompt injection and phishing.",
+    availability: "First Come, First Served - First 800 Redemptions",
+    url: "https://agentboxd.com/",
   },
 
 ];
@@ -228,29 +239,40 @@ function PerkCard({ perk, index }) {
 
   // Base layout contents
   const cardContent = (
-    <>
-      <div className="h-20 w-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 overflow-hidden">
-        <img
-          src={perk.logo}
-          alt={`${perk.sponsor} logo`}
-          className={`h-15 w-15 object-contain transition-transform ${
-            perk.invertLogo ? "brightness-0 invert" : ""
-          } ${perk.logoScale || ""}`}
-        />
-      </div>
-      <div>
-        <span className="eyebrow">perk · {perk.sponsor}</span>
-        <p className="font-display text-2xl md:text-3xl font-bold mt-1 text-gold">
-          {parts[0]}
-          {perk.highlight && (
-            <span className="text-white">{perk.highlight}</span>
-          )}
-          {parts[1]}
+  <>
+    <div className="h-20 w-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 overflow-hidden">
+      <img
+        src={perk.logo}
+        alt={`${perk.sponsor} logo`}
+        className={`h-15 w-15 object-contain transition-transform ${
+          perk.invertLogo ? "brightness-0 invert" : ""
+        } ${perk.logoScale || ""}`}
+      />
+    </div>
+
+    <div>
+      <span className="eyebrow">perk · {perk.sponsor}</span>
+
+      <p className="font-display text-2xl md:text-3xl font-bold mt-1 text-gold">
+        {parts[0]}
+        {perk.highlight && (
+          <span className="text-white">{perk.highlight}</span>
+        )}
+        {parts[1]}
+      </p>
+
+      <p className="text-mist text-sm mt-2 max-w-xl">
+        {perk.desc}
+      </p>
+
+      {perk.availability && (
+        <p className="text-xs text-gold/80 mt-3 font-medium">
+          {perk.availability}
         </p>
-        <p className="text-mist text-sm mt-2 max-w-xl">{perk.desc}</p>
-      </div>
-    </>
-  );
+      )}
+    </div>
+  </>
+);
 
   const className =
     "rounded-3xl glass p-7 md:p-8 flex flex-col md:flex-row items-center gap-6 text-center md:text-left border border-white/10 transition-all hover:border-white/20";
