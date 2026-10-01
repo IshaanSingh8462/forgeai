@@ -87,13 +87,6 @@ const mentors = [
     linkedin: "https://www.linkedin.com/in/swapneswarsundarray/",
   },
   {
-    name: "Aatishkumar kumardhami",
-    title: "---",
-    image: "/mentors/AK.png",
-    bio: "---",
-    linkedin: "",
-  },
-  {
     name: "Nilesh Dhage",
     title: "Director Product Management - Financial Services",
     image: "/mentors/NileshDhage-mentor.png",
@@ -113,6 +106,48 @@ const mentors = [
     image: "/mentors/SaiprasadCharudattaShrikhande-mentor.png",
     bio: "Saiprasad Charudatta Shrikhande is a wireless communications, cybersecurity, and cloud networking expert with over 17 years of experience designing, validating, and securing complex technology systems. His expertise spans 5G, Wi‑Fi, IoT, AI-driven analytics, and network automation, and he actively contributes to the technology community as an IEEE journal reviewer, hackathon judge, and mentor.",
     linkedin: "https://www.linkedin.com/in/saiprasad-shrikhande-081b3b9b"
+  },
+  {
+    name: "Pragati Ingole",
+    title: "Data Analyst - Options For Learning",
+    image: "/mentors/PragatiIngole-mentor.png",
+    bio: "Pragati Ingole is an AI & Data Analytics professional specializing in data-driven strategy, data management, reporting, and process optimization across the education and retail sectors. With a strong focus on transforming complex data into actionable business insights, she applies analytics to support strategic decision-making, improve operational performance, and identify opportunities for innovation. Her interests span AI-powered analytics, data strategy, business intelligence, and the practical application of emerging technologies to real-world challenges. Drawing on cross-industry experience, she brings both an analytical and business-focused perspective to evaluating innovative solutions considering not only the strength of the technology and data, but also its usability, scalability, impact, and potential to solve meaningful problems.",
+    linkedin: "https://www.linkedin.com/in/pragatiingole/"
+  },
+    {
+    name: "Dhiraj Ramnani",
+    title: "Staff Software Engineer - Meta",
+    image: "/mentors/DhirajRamnani-mentor.png",
+    bio: "Over seven years at Meta, I have built and scaled large-scale advertising infrastructure spanning audience automation, real-time data systems, indexing, retrieval, and semantic and generative systems.  Technical leader for Ads Targeting and Audience Automation Infrastructure at Meta, building large-scale systems that help advertisers discover and reach relevant audiences.",
+    linkedin: "https://www.linkedin.com/in/dhirajhr/"
+  },
+    {
+    name: "Tanya Kapoor",
+    title: "Business Analyst - Sheladia Associates, Inc.",
+    image: "/mentors/TanyaKapoor-mentor.png",
+    bio: "---",
+    linkedin: "https://www.linkedin.com/in/tanyakapoor24"
+  },
+    {
+    name: "Shivakrishna Vangala",
+    title: "Principal Architect - T-Mobile",
+    image: "/mentors/ShivakrishnaVangala-mentor.png",
+    bio: "Shiva is a Principal Architect at T-Mobile with 15+ years of experience across large-scale enterprise architecture, cloud, distributed systems, AI/data platforms, cybersecurity, IoT, and telecommunications. Based in the Seattle area, he has led complex technology transformation initiatives and also contributes to the broader technology community through hackathon judging, technical peer review, and mentoring.",
+    linkedin: "https://www.linkedin.com/in/shivakrishna-v-07777314"
+  },
+    {
+    name: "Zeeshan Ali",
+    title: "KMP Developer & AI Engineer - Freelancer",
+    image: "/mentors/ZeeshanAli-mentor.png",
+    bio: "I am a KMP Mobile Apps developer with nearly 5 years of experience. I also have expertise in AI Engineering and ML/DL. I have worked as lead KMP developer at Feres - an Ethiopian leading ride hailing platform with over a million downloads and nearly 100K daily active users. Currently I am pursuing Masters in Computer Science.",
+    linkedin: "https://linkedin.com/in/devscion"
+  },
+    {
+    name: "Ganesh Harke",
+    title: "Vice President, Technology - Citi",
+    image: "/mentors/GaneshHarke-mentor.png",
+    bio: "Ganesh Harke is a technology leader with 18+ years of experience building low-latency distributed systems and real-time data pipelines for trading. His focus is on distributed architecture and agentic AI systems, including runtime guardrails and human oversight for autonomous systems in regulated environments. He holds an MS in Financial Engineering and is a member of the FINOS Technical Oversight Committee.",
+    linkedin: "https://www.linkedin.com/in/harkeganesh"
   },
 ];
 
