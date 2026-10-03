@@ -20,6 +20,7 @@ const topPrizes = [
       "2-year CodeCrafters VIP for each team member (4x $720 = $2,880)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
+      "3,000 ProjectAAL credits ($60)",
     ],
   },
   {
@@ -33,6 +34,7 @@ const topPrizes = [
       "1-year CodeCrafters VIP for each team member (4x $360 = $1,440)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
+      "1,500 ProjectAAL credits ($30)",
     ],
   },
   {
@@ -46,6 +48,7 @@ const topPrizes = [
       "6-month CodeCrafters VIP for each team member (4x $180 = $720)",
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
+      "750 ProjectAAL credits ($15)",
     ],
   },
 ];
@@ -131,6 +134,14 @@ const perks = [
     desc: "Give AI agents real email inboxes and check every incoming email for prompt injection and phishing.",
     availability: "First Come, First Served - First 800 Redemptions",
     url: "https://agentboxd.com/",
+  },
+  {
+    sponsor: "ProjectAAL",
+    logo: "projectaal-logo.png",
+    headline: "250 ProjectAAL credits ($5)",
+    highlight: " • AI-Powered App Building",
+    desc: "Build, debug, iterate, and complete React and TypeScript apps with AI-powered tools and multiple AI models.",
+    url: "https://projectaal.com/",
   },
 
 ];

@@ -137,6 +137,41 @@ const judges = [
     bio: "I am a software engineer at Reddit, where I lead backend projects supporting content review, enforcement, appeals, and user safety. Previously, I built payments-platform infrastructure at Google and data-platform tools at Lyft, with expertise in backend architecture, scalable systems, API design, and reliability.",
     linkedin: "https://www.linkedin.com/in/dikshathakur3119/",
   },
+  {
+    name: "Xihao Cao",
+    title: "Senior Data Scientist - Walmart Global Tech",
+    image: "/judges/XihaoCao-judge.png",
+    bio: "I am a Data Scientist whose work and research span LLMs, time-series forecasting, information extraction, and AI-driven decision-support systems. Beyond my professional work, I also collaborate with nonprofit organizations to explore how AI can support anti-human-trafficking operations and enable more effective decision-making.",
+    linkedin: "https://www.linkedin.com/in/xihao-cao-goodluck/",
+  },
+  {
+    name: "Satya Veerendra Vegulla",
+    title: "Senior Engineering Manager - Enact Systems",
+    image: "/judges/SatyaVeerendraVegulla-judge.png",
+    bio: "Satya Veerendra Vegulla is a Senior Engineering Manager at Enact Systems with 14+ years of experience in engineering leadership and building scalable platforms. He has a strong background in applied AI, recently moving his team to an agentic development workflow and implementing predictive systems for Solar asset management technology. In 2026, he was named to Technical.ly's RealLIST Innovators for Philadelphia.",
+    linkedin: "https://www.linkedin.com/in/satyaveerendra-vegulla/",
+  },
+  {
+    name: "Ravi Shanker Thadishetti",
+    title: "Senior Software Engineer - PayPal",
+    image: "/judges/RaviShankerThadishetti-judge.png",
+    bio: "Ravi Shanker Thadishetti is a Senior Software Engineer at PayPal with experience in backend systems, distributed systems, microservices, cloud technologies, APIs, and AI/LLM applications. His work focuses on building scalable and reliable software systems and evaluating technical solutions for architecture, performance, and real-world impact.",
+    linkedin: "https://www.linkedin.com/in/ravishankerthadishetti",
+  },
+  {
+    name: "Karthik Uppala",
+    title: "Founder - ProjectAAL",
+    image: "/judges/KarthikUppala-judge.png",
+    bio: "Karthik Uppala is a Computer Science student at the University at Buffalo and a student founder focused on AI, software, and entrepreneurship. He is the founder of ProjectAAL and has experience building startups, organizing hackathons, developing technical projects, and working in growth and marketing. He enjoys turning ideas into real products, learning quickly, and building solutions that solve practical problems.",
+    linkedin: "https://www.linkedin.com/in/karthik-uppala-8a09a036b/",
+  },
+  {
+    name: "Lucas Marinus",
+    title: "Commercial Lead - Parahelp",
+    image: "/judges/LucasMarinus-judge.jpeg",
+    bio: "I'm Lucas. Originally from Belgium, but moved to Stockholm in 2023 to work at Sana Labs- one of the first AI startups in Stockholm - as one of their early joiners (fun fact: Anton Osika was Sana's first employee). I spent 3 years at Sana, working from both Stockholm and New York in multiple different roles: founding member of the Engagement team, led Product, and built/led Solutions Engineering. After the Workday acquisition ($1.1Bn), it felt like time for a new challenge, so I joined Parahelp as their 6th employee to build and lead our commercial team.",
+    linkedin: "https://www.linkedin.com/in/lucasmarinus",
+  },
 ];
 
 export default function Judges() {
