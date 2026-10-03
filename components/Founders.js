@@ -14,7 +14,7 @@ const founders = [
   {
     name: "Ishaan Singh",
     title: "Co-Founder - ForgeHacks",
-    image: "/IshaanSingh-Portfolio:ProfilePicture.png",
+    image: "/IshaanSingh-PortfolioProfilePicture.png",
     bio: "Ishaan Singh is a high school student, developer, and entrepreneur passionate about AI, technology, and building things that solve real-world problems. He has founded multiple projects, including Strail, a task breakdown platform, and ForgeHacks, an online AI hackathon for students. He enjoys developing software, exploring new ideas, and bringing communities together through technology.",
     linkedin: "https://www.linkedin.com/in/ishaan-singh8809/",
   },
