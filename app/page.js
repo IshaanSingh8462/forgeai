@@ -9,6 +9,7 @@ import Prizes from "../components/Prizes";
 import Mentors from "../components/Mentors";
 import Ambassadors from "../components/Ambassadors";
 import Judges from "../components/Judges";
+import Founders from "../components/Founders";
 import Sponsors from "../components/Sponsors";
 import FAQ, { faqSchema } from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -25,6 +26,7 @@ export default function Home() {
         <Hero />
         <Stats />
         <About />
+        <Founders />
         <Tracks />
         <Schedule />
         <Prizes />

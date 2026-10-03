@@ -21,7 +21,7 @@ const judges = [
   {
     name: "Nevasini Sasikumar",
     title: "---",
-    image: "/judges/NS.png",
+    image: "",
     bio: "---",
     linkedin: "",
   },
@@ -157,13 +157,6 @@ const judges = [
     image: "/judges/RaviShankerThadishetti-judge.png",
     bio: "Ravi Shanker Thadishetti is a Senior Software Engineer at PayPal with experience in backend systems, distributed systems, microservices, cloud technologies, APIs, and AI/LLM applications. His work focuses on building scalable and reliable software systems and evaluating technical solutions for architecture, performance, and real-world impact.",
     linkedin: "https://www.linkedin.com/in/ravishankerthadishetti",
-  },
-  {
-    name: "Karthik Uppala",
-    title: "Founder - ProjectAAL",
-    image: "/judges/KarthikUppala-judge.png",
-    bio: "Karthik Uppala is a Computer Science student at the University at Buffalo and a student founder focused on AI, software, and entrepreneurship. He is the founder of ProjectAAL and has experience building startups, organizing hackathons, developing technical projects, and working in growth and marketing. He enjoys turning ideas into real products, learning quickly, and building solutions that solve practical problems.",
-    linkedin: "https://www.linkedin.com/in/karthik-uppala-8a09a036b/",
   },
   {
     name: "Lucas Marinus",

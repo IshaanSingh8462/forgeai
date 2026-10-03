@@ -149,6 +149,13 @@ const mentors = [
     bio: "Ganesh Harke is a technology leader with 18+ years of experience building low-latency distributed systems and real-time data pipelines for trading. His focus is on distributed architecture and agentic AI systems, including runtime guardrails and human oversight for autonomous systems in regulated environments. He holds an MS in Financial Engineering and is a member of the FINOS Technical Oversight Committee.",
     linkedin: "https://www.linkedin.com/in/harkeganesh"
   },
+    {
+    name: "Karthik Uppala",
+    title: "Founder - ProjectAAL",
+    image: "/mentors/KarthikUppala-judge.png",
+    bio: "Karthik Uppala is a Computer Science student at the University at Buffalo and a student founder focused on AI, software, and entrepreneurship. He is the founder of ProjectAAL and has experience building startups, organizing hackathons, developing technical projects, and working in growth and marketing. He enjoys turning ideas into real products, learning quickly, and building solutions that solve practical problems.",
+    linkedin: "https://www.linkedin.com/in/karthik-uppala-8a09a036b/",
+  },
 ];
 
 export default function Mentors() {

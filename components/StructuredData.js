@@ -29,7 +29,7 @@ export function OrganizationJsonLd() {
     email: "team@forgehacks.dev",
     // Only official ForgeHacks-owned profiles that already appear in Footer.js.
     sameAs: [
-      "https://www.instagram.com/forgehackathon/",
+      "https://www.instagram.com/forge.hacks/",
       "https://discord.gg/RXENwZ5nc4",
       "https://forgehacks-2026.devpost.com/",
     ],

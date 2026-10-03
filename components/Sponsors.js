@@ -28,7 +28,7 @@ export default function Sponsors() {
         >
           <a href="https://featherless.ai/" target="_blank" rel="noopener">
             <img
-              src="/featherless.png"
+              src="/sponsors/featherless.png"
               alt="Featherless logo"
               className="w-full h-auto object-contain"
             />
@@ -44,7 +44,7 @@ export default function Sponsors() {
         >
           <a href="https://aopsacademy.org/" target="_blank" rel="noopener">
             <img
-              src="/aops-logo.png"
+              src="/sponsors/aops-logo.png"
               alt="AoPS logo"
               className="w-full h-auto object-contain"
             />
@@ -60,7 +60,7 @@ export default function Sponsors() {
         >
           <a href="https://codecrafters.io/" target="_blank" rel="noopener">
             <img
-              src="/CodeCraftersLogo.png"
+              src="/sponsors/CodeCraftersLogo.png"
               alt="CodeCrafters logo"
               className="w-full h-auto object-contain"
             />
@@ -76,7 +76,7 @@ export default function Sponsors() {
         >
           <a href="https://momen.app/" target="_blank" rel="noopener">
             <img
-              src="/momen-light.png"
+              src="/sponsors/momen-light.png"
               alt="Momen logo"
               className="w-full h-auto object-contai"
             />
@@ -92,7 +92,7 @@ export default function Sponsors() {
         >
           <a href="https://tin.computer/" target="_blank" rel="noopener">
             <img
-              src="/tin-logo.png"
+              src="/sponsors/tin-logo.png"
               alt="Tin Computer logo"
               className="w-full h-auto object-contain brightness-0 invert"
             />
@@ -108,7 +108,7 @@ export default function Sponsors() {
         >
           <a href="https://devswarm.ai/" target="_blank" rel="noopener">
             <img
-              src="/devswarm-logo.png"
+              src="/sponsors/devswarm-logo.png"
               alt="DevSwarm logo"
               className="w-full h-auto object-contain"
             />
@@ -124,7 +124,7 @@ export default function Sponsors() {
         >
           <a href="https://cleanshot.com/" target="_blank" rel="noopener">
             <img
-              src="/cleanshot-logo.png"
+              src="/sponsors/cleanshot-logo.png"
               alt="Cleanshot logo"
               className="w-full h-auto object-contain"
             />
@@ -140,7 +140,7 @@ export default function Sponsors() {
         >
           <a href="https://adaptionlabs.ai/" target="_blank" rel="noopener">
             <img
-              src="/adaption-labs-logo.png"
+              src="/sponsors/adaption-labs-logo.png"
               alt="Adaption Labs logo"
               className="w-full h-auto object-contain"
             />
@@ -156,7 +156,7 @@ export default function Sponsors() {
         >
           <a href="https://www.kariaa.com/" target="_blank" rel="noopener">
             <img
-              src="/kariaa-logo.png"
+              src="/sponsors/kariaa-logo.png"
               alt="Kariaa logo"
               className="w-full h-auto object-contain"
             />
@@ -172,7 +172,7 @@ export default function Sponsors() {
         >
           <a href="https://n8n.io/" target="_blank" rel="noopener">
             <img
-              src="/n8n-logo.png"
+              src="/sponsors/n8n-logo.png"
               alt="n8n logo"
               className="w-full h-auto object-contain"
             />
@@ -188,7 +188,7 @@ export default function Sponsors() {
         >
           <a href="https://saily.com/" target="_blank" rel="noopener">
             <img
-              src="/saily-logo.png"
+              src="/sponsors/saily-logo.png"
               alt="Saily logo"
               className="w-full h-auto object-contain"
             />
@@ -204,7 +204,7 @@ export default function Sponsors() {
         >
           <a href="https://yce.perfectcorp.com/ai-api " target="_blank" rel="noopener">
             <img
-              src="/YC-API-logo.png"
+              src="/sponsors/YC-API-logo.png"
               alt="Perfectcorp logo"
               className="w-full h-auto object-contain"
             />
@@ -220,7 +220,7 @@ export default function Sponsors() {
         >
           <a href="https://agentboxd.com/" target="_blank" rel="noopener">
             <img
-              src="/agentboxd-logo-dark.png"
+              src="/sponsors/agentboxd-logo-dark.png"
               alt="Agentboxd logo"
               className="w-full h-auto object-contain"
             />
@@ -236,7 +236,7 @@ export default function Sponsors() {
         >
           <a href="https://projectaal.com/" target="_blank" rel="noopener">
             <img
-              src="/projectaal-logo.png"
+              src="/sponsors/projectaal-logo.png"
               alt="ProjectAAL logo"
               className="w-full h-auto object-contain"
             />

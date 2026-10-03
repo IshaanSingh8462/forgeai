@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const social = [
-  { label: "Instagram", href: "https://www.instagram.com/forgehackathon/" },
+  { label: "Instagram", href: "https://www.instagram.com/forge.hacks/" },
   { label: "DevPost", href: "https://forgehacks-2026.devpost.com" },
   { label: "Discord", href: "https://discord.gg/RXENwZ5nc4" },
 ];
