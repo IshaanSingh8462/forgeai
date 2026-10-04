@@ -60,7 +60,7 @@ const topPrizes = [
 const perks = [
   {
     sponsor: "Featherless.ai",
-    logo: "/featherless.png",
+    logo: "/sponsors/featherless.png",
     headline: "$25 free API credits",
     highlight: " • Instant Open-Source AI",
     desc: "Access 30,000+ AI models via API without managing GPUs.",
@@ -68,7 +68,7 @@ const perks = [
   },
   {
     sponsor: "Momen",
-    logo: "momen-perk-logo.png",
+    logo: "/sponsors/momen-perk-logo.png",
     headline: "$100 Momen credits",
     highlight: " • Build Web Apps Fast",
     desc: "Skip backend setup and launch web apps fast with zero code.",
@@ -76,7 +76,7 @@ const perks = [
   },
   {
     sponsor: "Devswarm",
-    logo: "devswarm-perk-logo.png",
+    logo: "/sponsors/devswarm-perk-logo.png",
     headline: "($96) 1 Month Free Devswarm Pro",
     highlight: " • Code Faster Together",
     desc: "Boost team collaboration and ship cleaner code with AI dev tools.",
@@ -84,7 +84,7 @@ const perks = [
   },
   {
     sponsor: "Tin.computer",
-    logo: "tin-logo.png",
+    logo: "/sponsors/tin-logo.png",
     headline: "$299 Credits (1-Mo Growth Plan)",
     highlight: " • Autonomous AI Growth Agent",
     desc: "Tin Computer is an autonomous growth agent that connects to a project's GitHub, analytics and Stripe and ships pull requests to grow it: SEO pages, landing-page fixes, ads and support replies. Every eligible team at ForgeHacks gets $299 in Tin Computer credits, one month of the Growth plan.",
@@ -93,7 +93,7 @@ const perks = [
   },
   {
     sponsor: "Adaption Labs",
-    logo: "adaption-labs-logo.png",
+    logo: "/sponsors/adaption-labs-logo.png",
     headline: "$500 in Adaption platform credits",
     highlight: " • Build Web Apps Fast",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
@@ -101,7 +101,7 @@ const perks = [
   },
   {
     sponsor: "n8n",
-    logo: "n8n-logo.png",
+    logo: "/sponsors/n8n-logo.png",
     headline: "($65) 1 month n8n Cloud Pro",
     highlight: " • Automate Any Workflow",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
@@ -111,7 +111,7 @@ const perks = [
   },
   {
     sponsor: "Kariaa",
-    logo: "kariaa-logo.png",
+    logo: "/sponsors/kariaa-logo.png",
     headline: "$40 in Kariaa credits",
     highlight: " • AI-Powered Work & Jobs",
     desc: "Automate website optimization, run growth experiments, and handle bug fixes autonomously.",
@@ -119,7 +119,7 @@ const perks = [
   },
   {
     sponsor: "YouCam API - Perfect Corp",
-    logo: "YC-API-logo.png",
+    logo: "/sponsors/YC-API-logo.png",
     headline: "$27.50 in YouCam API credits",
     highlight: " • Visual Experiences APIs",
     desc: "AI-powered APIs for image generation, editing, enhancement, and more.",
@@ -128,7 +128,7 @@ const perks = [
   },
   {
     sponsor: "Agentboxd",
-    logo: "agentboxd-logo.png",
+    logo: "/sponsors/agentboxd-logo.png",
     headline: "30 days of the Agentboxd Builder plan ($15)",
     highlight: " • Give AI Agents Their Own Email Inboxes",
     desc: "Give AI agents real email inboxes and check every incoming email for prompt injection and phishing.",
@@ -137,7 +137,7 @@ const perks = [
   },
   {
     sponsor: "ProjectAAL",
-    logo: "projectaal-logo.png",
+    logo: "/sponsors/projectaal-logo.png",
     headline: "250 ProjectAAL credits ($5)",
     highlight: " • AI-Powered App Building",
     desc: "Build, debug, iterate, and complete React and TypeScript apps with AI-powered tools and multiple AI models.",
