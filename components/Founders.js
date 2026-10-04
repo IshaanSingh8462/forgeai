@@ -25,7 +25,7 @@ const founders = [
     bio: "Sushanth Punuru is a high school student and developer passionate about AI, cybersecurity, software, and computer hardware. He has experience building web platforms and apps, engineering hardware systems, and founding and leading student organizations. He enjoys creating tools that help other students learn and bringing people together to solve real problems.",
     linkedin: "https://www.linkedin.com/in/sushanth-punuru/",
   },
-    {
+  {
     name: "Aarav Narayan",
     title: "Co-Founder - ForgeHacks",
     image: "/AaravNarayan.png",
