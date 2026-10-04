@@ -11,19 +11,26 @@ import PersonCard from "./PersonCard";
 // Replace the placeholder values below with the real details.
 // ─────────────────────────────────────────────────────────────
 const founders = [
-  {
+    {
     name: "Ishaan Singh",
     title: "Co-Founder - ForgeHacks",
     image: "/IshaanSingh-PortfolioProfilePicture.png",
-    bio: "Ishaan Singh is a high school student, developer, and entrepreneur passionate about AI, technology, and building things that solve real-world problems. He has founded multiple projects, including Strail, a task breakdown platform, and ForgeHacks, an online AI hackathon for students. He enjoys developing software, exploring new ideas, and bringing communities together through technology.",
+    bio: "Ishaan Singh is a high school student and developer passionate about AI, software, computer science, and entrepreneurship. He has experience building web applications and AI-powered tools, competing in programming and data science competitions, and founding and leading student technology initiatives. He enjoys exploring new technologies, turning ideas into working products, and creating opportunities for other students to build and learn.",
     linkedin: "https://www.linkedin.com/in/ishaan-singh8809/",
   },
   {
     name: "Sushant Punuru",
     title: "Co-Founder - ForgeHacks",
-    image: "",
-    bio: "---",
-    linkedin: "",
+    image: "/SushantPunuru.png",
+    bio: "Sushanth Punuru is a high school student and developer passionate about AI, cybersecurity, software, and computer hardware. He has experience building web platforms and apps, engineering hardware systems, and founding and leading student organizations. He enjoys creating tools that help other students learn and bringing people together to solve real problems.",
+    linkedin: "https://www.linkedin.com/in/sushanth-punuru/",
+  },
+    {
+    name: "Aarav Narayan",
+    title: "Co-Founder - ForgeHacks",
+    image: "/AaravNarayan.png",
+    bio: "Aarav Narayan is a high school student and developer passionate about computer engineering, robotics, AI, and mathematics. He has experience conducting research at Georgia Tech, programming for FIRST Robotics, and developing machine learning projects. He enjoys building creative solutions to challenging problems and applying technology to make a real-world impact.",
+    linkedin: "https://www.linkedin.com/in/aarav-narayan-725745325/",
   },
 ];
 
@@ -50,7 +57,7 @@ export default function Founders() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-8 items-start">
           {founders.map((founder, i) => (
             <motion.div
               key={founder.name + i}
