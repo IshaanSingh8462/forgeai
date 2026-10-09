@@ -138,10 +138,10 @@ export default function Hero() {
           className="mt-16 inline-flex flex-col items-center gap-4 glass rounded-3xl px-8 py-6"
         >
           {done ? (
-            <span className="eyebrow text-flare">Registration is now closed</span>
+            <span className="eyebrow text-flare">Submissions are now closed</span>
           ) : (
             <>
-              <span className="eyebrow">Registration Closes in</span>
+              <span className="eyebrow">Submissions Close in</span>
               <div className="flex items-center gap-4 md:gap-8">
                 <TimeUnit value={days} label="Days" />
                 <span className="text-2xl text-white/20 font-display">:</span>
