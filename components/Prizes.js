@@ -21,6 +21,7 @@ const topPrizes = [
       "1-year DevSwarm Pro for each team member (4x $96 = $384)",
       "CleanShot X license for each team member (4x $29 = $116)",
       "3,000 ProjectAAL credits ($60)",
+      "1 month of Fulminare Maximus ($48 value)",
     ],
   },
   {
@@ -142,6 +143,14 @@ const perks = [
     highlight: " • AI-Powered App Building",
     desc: "Build, debug, iterate, and complete React and TypeScript apps with AI-powered tools and multiple AI models.",
     url: "https://projectaal.com/",
+  },
+  {
+    sponsor: "Fulminare",
+    logo: "/sponsors/fulminare-logo.png",
+    headline: "1 month of Fulminare Lumen ($8)",
+    highlight: " • AI Agent & Cloud Computing",
+    desc: "All ForgeHacks participants get 1 month of Fulminare Lumen free, with no credit card required or auto-renewal. Every member of a winning team receives 1 month of Fulminare Maximus ($48 value). Redeem by October 31, 2026.",
+    url: "https://fulmina.re/",
   },
 
 ];
