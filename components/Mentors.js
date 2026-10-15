@@ -87,13 +87,6 @@ const mentors = [
     linkedin: "https://www.linkedin.com/in/swapneswarsundarray/",
   },
   {
-    name: "Nilesh Dhage",
-    title: "Director Product Management - Financial Services",
-    image: "/mentors/NileshDhage-mentor.png",
-    bio: "Nilesh Dhage is a Director of Product Management and AI strategy professional with experience evaluating technology innovation, mentoring teams, and guiding products from concept to impact. As an author and technology practitioner, Nilesh brings expertise in AI product strategy, systems design, emerging technologies, and practical business value. As a hackathon judge, he assesses projects for innovation, technical feasibility, user impact, execution quality, and potential to scale.",
-    linkedin: "https://www.linkedin.com/in/nileshdhage",
-  },
-  {
     name: "Ujwal Suresh Vanjare",
     title: "Software Engineer - BNSF Railway",
     image: "/mentors/UjwalSureshVanjare-mentor.png",
@@ -113,13 +106,6 @@ const mentors = [
     image: "/mentors/PragatiIngole-mentor.png",
     bio: "Pragati Ingole is an AI & Data Analytics professional specializing in data-driven strategy, data management, reporting, and process optimization across the education and retail sectors. With a strong focus on transforming complex data into actionable business insights, she applies analytics to support strategic decision-making, improve operational performance, and identify opportunities for innovation. Her interests span AI-powered analytics, data strategy, business intelligence, and the practical application of emerging technologies to real-world challenges. Drawing on cross-industry experience, she brings both an analytical and business-focused perspective to evaluating innovative solutions considering not only the strength of the technology and data, but also its usability, scalability, impact, and potential to solve meaningful problems.",
     linkedin: "https://www.linkedin.com/in/pragatiingole/"
-  },
-    {
-    name: "Dhiraj Ramnani",
-    title: "Staff Software Engineer - Meta",
-    image: "/mentors/DhirajRamnani-mentor.png",
-    bio: "Over seven years at Meta, I have built and scaled large-scale advertising infrastructure spanning audience automation, real-time data systems, indexing, retrieval, and semantic and generative systems.  Technical leader for Ads Targeting and Audience Automation Infrastructure at Meta, building large-scale systems that help advertisers discover and reach relevant audiences.",
-    linkedin: "https://www.linkedin.com/in/dhirajhr/"
   },
     {
     name: "Tanya Kapoor",

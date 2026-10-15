@@ -19,13 +19,6 @@ const judges = [
     linkedin: "https://www.linkedin.com/in/aditya-shrivastava30/",
   },
   {
-    name: "Nevasini Sasikumar",
-    title: "---",
-    image: "",
-    bio: "---",
-    linkedin: "",
-  },
-  {
     name: "Sashank Agarwal",
     title: "Senior Cloud Software and Infrastructure Engineer - NVIDIA",
     image: "/judges/SashankAgarwal-judge.png",
@@ -164,6 +157,34 @@ const judges = [
     image: "/judges/LucasMarinus-judge.jpeg",
     bio: "I'm Lucas. Originally from Belgium, but moved to Stockholm in 2023 to work at Sana Labs- one of the first AI startups in Stockholm - as one of their early joiners (fun fact: Anton Osika was Sana's first employee). I spent 3 years at Sana, working from both Stockholm and New York in multiple different roles: founding member of the Engagement team, led Product, and built/led Solutions Engineering. After the Workday acquisition ($1.1Bn), it felt like time for a new challenge, so I joined Parahelp as their 6th employee to build and lead our commercial team.",
     linkedin: "https://www.linkedin.com/in/lucasmarinus",
+  },
+    {
+    name: "Dhruv Sekhawat",
+    title: "Co-founder & CTO - Loandock",
+    image: "/judges/DhruvSekhawat-judge.png",
+    bio: "Dhruv Sekhawat is the co-founder and CTO of Loandock, a venture-backed company building production AI agents for mortgage workflows. His work spans AI engineering, system integrations, and taking prototypes into real financial operations. He has competed in 14 hackathons, won four, and previously judged college and corporate hackathons.",
+    linkedin: "https://www.linkedin.com/in/dhruvsekhawat",
+  },
+  {
+    name: "Arun Taneja",
+    title: "Principal Software Engineer - Oracle",
+    image: "/judges/ArunTaneja-judge.jpg",
+    bio: "Arun Taneja is a Principal Software Engineer at Oracle with 19+ years of experience building cloud-native platforms for companies including Oracle, AT&T, J.P. Morgan and British Telecom. At Oracle, he architects ML platform services on Oracle Cloud Infrastructure, including training and inference pipelines, MLflow experiment tracking, and an LLM-powered AIOps agent built on MCP and OCI Generative AI. He holds a Master's in Computer Science from the University of Illinois Urbana-Champaign, is an IEEE Senior Member, and has mentored 25+ engineers over his career.",
+    linkedin: "https://www.linkedin.com/in/arun-taneja-80b9097/",
+  },
+  {
+    name: "Nilesh Dhage",
+    title: "Director Product Management - Financial Services",
+    image: "/judges/NileshDhage-mentor.png",
+    bio: "Nilesh Dhage is a Director of Product Management and AI strategy professional with experience evaluating technology innovation, mentoring teams, and guiding products from concept to impact. As an author and technology practitioner, Nilesh brings expertise in AI product strategy, systems design, emerging technologies, and practical business value. As a hackathon judge, he assesses projects for innovation, technical feasibility, user impact, execution quality, and potential to scale.",
+    linkedin: "https://www.linkedin.com/in/nileshdhage",
+  },
+      {
+    name: "Dhiraj Ramnani",
+    title: "Staff Software Engineer - Meta",
+    image: "/judges/DhirajRamnani-mentor.png",
+    bio: "Over seven years at Meta, I have built and scaled large-scale advertising infrastructure spanning audience automation, real-time data systems, indexing, retrieval, and semantic and generative systems.  Technical leader for Ads Targeting and Audience Automation Infrastructure at Meta, building large-scale systems that help advertisers discover and reach relevant audiences.",
+    linkedin: "https://www.linkedin.com/in/dhirajhr/"
   },
 ];
 

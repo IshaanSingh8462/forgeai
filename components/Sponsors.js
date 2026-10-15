@@ -270,7 +270,7 @@ export default function Sponsors() {
             Partners & Sponsors
           </h3>
           <p className="text-mist mt-3 max-w-md mx-auto">
-            Sponsorship for this event are open. Connect with top student talent and showcase your brand to hundreds of ambitious builders.
+            Sponsorship for this event are open. Connect with top student talent and showcase your brand to thousands of ambitious builders.
           </p>
           <a
             href="https://forms.gle/AaMs5xeqW7qcQdG4A"
