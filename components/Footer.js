@@ -24,7 +24,7 @@ export default function Footer() {
             Ready to <span className="text-gradient">forge</span>?
           </h2>
           <p className="text-mist mt-4">
-            Join hundreds of other high school and college students building with AI.
+            Join thousands of other high school and college students building with AI.
           </p>
           <a
             href="https://forgehacks-2026.devpost.com/?ref_feature=challenge&ref_medium=discover&_gl=1*p9zpyu*_gcl_au*MTQyMTkxOTA4MS4xNzgxMDYyNDIz*_ga*Mzc3ODk4NjkuMTc4MTA2MjQyMw..*_ga_0YHJK3Y10M*czE3ODUzNTI2MjAkbzU0JGcxJHQxNzg1MzYxODM0JGoxJGwwJGgw"
