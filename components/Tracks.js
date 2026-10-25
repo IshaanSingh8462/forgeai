@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import WinnerCard from "./WinnerCard";
 
 // ─────────────────────────────────────────────────────────────
 // TRACKS — one object per track. Replace each `prompt` with the
@@ -13,36 +14,72 @@ const tracks = [
     blurb: "Tools that improve care, access, or wellbeing.",
     prompt:
       "Build an AI-powered solution that makes healthcare information and interactions clearer, more accessible, or easier to act on.",
+    winner: {
+      project: "AMR Lens",
+      members: ["Sai Ruthvik Athota", "Matheus Goncalves da Costa Pereira"],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1228204-amr-lens",
+      summary: "",
+    },
   },
   {
     name: "AI + Education",
     blurb: "Reimagining how people learn and teach.",
     prompt:
       "Build an AI-powered solution that helps learners move beyond memorization to understand concepts, make connections, and apply what they learn.",
+    winner: {
+      project: "StudyMate",
+      members: ["Bushra Magdy", "Layan Ismaeil", "Miriam Ahmed",],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1212599-studymate",
+      summary: "",
+    }, 
   },
   {
     name: "AI + Climate",
     blurb: "Tackling sustainability and environmental challenges.",
     prompt:
       "Build an AI-powered solution that helps people understand environmental changes, prepare for climate impacts, use resources wisely, or create resilient systems.",
+    winner: {
+      project: "ReefSense",
+      members: ["Glenn Putra Laymando", "Antonio Owen Putra Amadeus", ""],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1217047-reefsense",
+      summary: "",
+    },
   },
   {
     name: "AI + Business",
     blurb: "Automating workflows and driving smarter decisions.",
     prompt:
       "Build an AI-powered solution that turns business data into clear insights, predictions, or recommendations that help people make better decisions.",
+    winner: {
+      project: "Lead Time",
+      members: ["Nathan Quek",],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1217561-lead-time",
+      summary: "",
+    },
   },
   {
     name: "AI + Cybersecurity",
     blurb: "Protecting digital systems, privacy, and infrastructure.",
     prompt:
       "Build an AI-powered solution that helps people recognize, prevent, verify, or respond to scams, impersonation, and fraud enabled by AI or modern technologies.",
+    winner: {
+      project: "SecondLook",
+      members: ["Adeel Falak Sher", "Raouf Khalid", ""],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1226743-second-look",
+      summary: "",
+    },
   },
   {
     name: "AI + Creativity",
     blurb: "Pushing the boundaries of art, media, and expression.",
     prompt:
       "Build an AI-powered experience that introduces a new way for people to create, collaborate, express ideas, or experience art and media.",
+    winner: {
+      project: "IdeaForge",
+      members: ["Nguyễn Cao Thông", "Huỳnh Thắm Ngô", "Trương Nhật Phát", "Tuấn Hùng Nguyễn"],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1213507-ideaforge",
+      summary: "",
+    },
   },
 ];
 
@@ -58,6 +95,8 @@ function TrackCard({ track, index }) {
     >
       <h3 className="font-display text-lg font-semibold">{track.name}</h3>
       <p className="text-sm text-mist leading-relaxed">{track.blurb}</p>
+
+      <WinnerCard winner={track.winner} label="Track Winner" />
 
       <div className="mt-3 pt-5 border-t border-white/10">
         <span className="eyebrow">Prompt</span>

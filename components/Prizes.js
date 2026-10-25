@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import WinnerCard from "./WinnerCard";
 
 // ─────────────────────────────────────────────────────────────
 // TOP PRIZES — edit this array whenever amounts/copy change.
@@ -23,6 +24,12 @@ const topPrizes = [
       "3,000 ProjectAAL credits ($60)",
       "1 month of Fulminare Maximus ($48 value)",
     ],
+    winner: {
+      project: "Prakira ",
+      members: ["Rofi Darmawan", "Gabriel Seto", "Zidane Zulfanali Hafid"],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1227362-prakira",
+      summary: "",
+    },
   },
   {
     rank: 2,
@@ -37,6 +44,12 @@ const topPrizes = [
       "CleanShot X license for each team member (4x $29 = $116)",
       "1,500 ProjectAAL credits ($30)",
     ],
+    winner: {
+      project: "Aquapulse",
+      members: ["Khả Lực",],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1223137-aquapulse",
+      summary: "",
+    },
   },
   {
     rank: 3,
@@ -51,6 +64,12 @@ const topPrizes = [
       "CleanShot X license for each team member (4x $29 = $116)",
       "750 ProjectAAL credits ($15)",
     ],
+    winner: {
+      project: "PayZen: Payment Proof Verifier",
+      members: ["Zunairah Maasfa Khan", "Syeda Alizah", "Syeda Umaima"],
+      devpost: "https://forgehacks-2026.devpost.com/submissions/1222419-payzen-payment-proof-verifier",
+      summary: "",
+    },
   },
 ];
 
@@ -224,6 +243,20 @@ function PrizeCard({ prize, featured = false }) {
   );
 }
 
+function PrizeColumn({ prize, featured = false }) {
+  return (
+    <div className="flex flex-col gap-4">
+      <WinnerCard
+        winner={prize.winner}
+        label={`${prize.label} Winner`}
+        accent={medalStyle(prize.rank)}
+        large={featured}
+      />
+      <PrizeCard prize={prize} featured={featured} />
+    </div>
+  );
+}
+
 function PodiumLayout({ prizes }) {
   const first = prizes.find((p) => p.rank === 1);
   const second = prizes.find((p) => p.rank === 2);
@@ -231,9 +264,9 @@ function PodiumLayout({ prizes }) {
 
   return (
     <div className="grid md:grid-cols-3 gap-6 items-end mb-14">
-      <div className="order-2 md:order-1">{second && <PrizeCard prize={second} />}</div>
-      <div className="order-1 md:order-2">{first && <PrizeCard prize={first} featured />}</div>
-      <div className="order-3 md:order-3">{third && <PrizeCard prize={third} />}</div>
+      <div className="order-2 md:order-1">{second && <PrizeColumn prize={second} />}</div>
+      <div className="order-1 md:order-2">{first && <PrizeColumn prize={first} featured />}</div>
+      <div className="order-3 md:order-3">{third && <PrizeColumn prize={third} />}</div>
     </div>
   );
 }
@@ -246,7 +279,7 @@ function PrizeGrid({ prizes }) {
       style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}
     >
       {sorted.map((prize) => (
-        <PrizeCard key={prize.rank} prize={prize} featured={prize.rank === 1} />
+        <PrizeColumn key={prize.rank} prize={prize} featured={prize.rank === 1} />
       ))}
     </div>
   );
